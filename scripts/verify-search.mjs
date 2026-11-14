@@ -35,28 +35,30 @@ for (const item of catalog.items) {
 }
 console.log('✅ All catalog items pass <= 460,800 bytes MMS ceiling.');
 
-// 2. Load VbcMediaCore and execute test queries
-async function loadVbcMediaCore() {
-  try {
-    return await import('../src/sdk/vbc-media-core.ts');
-  } catch (err) {
-    if (err.code === 'ERR_UNKNOWN_FILE_EXTENSION' || err.message?.includes('Unknown file extension')) {
-      const ts = (await import('typescript')).default;
-      const tsSource = fs.readFileSync(path.resolve('src/sdk/vbc-media-core.ts'), 'utf8');
-      const transpiled = ts.transpileModule(tsSource, {
-        compilerOptions: {
-          module: ts.ModuleKind.ESNext,
-          target: ts.ScriptTarget.ES2022
-        }
-      });
-      const dataUri = `data:text/javascript;base64,${Buffer.from(transpiled.outputText).toString('base64')}`;
-      return await import(dataUri);
-    }
-    throw err;
+// 2. Load VbcMediaCore (cross-platform TypeScript transpile to standard .mjs for Node <= 20 and CI)
+const tsModule = (await import('typescript')).default;
+const tsSource = fs.readFileSync(path.resolve('src/sdk/vbc-media-core.ts'), 'utf8');
+const transpiled = tsModule.transpileModule(tsSource, {
+  compilerOptions: {
+    module: tsModule.ModuleKind.ESNext,
+    target: tsModule.ScriptTarget.ES2022
+  }
+});
+
+const tempMjsPath = path.resolve('scripts/.vbc-media-core.generated.mjs');
+fs.writeFileSync(tempMjsPath, transpiled.outputText, 'utf8');
+
+let VbcMediaCore;
+try {
+  const fileUrl = new URL(`file://${path.resolve(tempMjsPath)}`).href;
+  const importedModule = await import(fileUrl);
+  VbcMediaCore = importedModule.VbcMediaCore;
+} finally {
+  if (fs.existsSync(tempMjsPath)) {
+    try { fs.unlinkSync(tempMjsPath); } catch {}
   }
 }
 
-const { VbcMediaCore } = await loadVbcMediaCore();
 const core = new VbcMediaCore();
 await core.init();
 
