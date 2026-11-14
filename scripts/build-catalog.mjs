@@ -1,48 +1,154 @@
 // scripts/build-catalog.mjs
 import fs from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import crypto from 'node:crypto';
 import path from 'node:path';
 
 const OUT_DIR = './public/cdn/v1';
 const ASSETS_DIR = path.join(OUT_DIR, 'assets');
-const MAX_MMS_BYTES = 450 * 1024; // Hard 450 KB MMS ceiling (Fixes VMMT-949)
+const MAX_MMS_BYTES = 450 * 1024; // Hard 450 KB MMS ceiling (460,800 bytes) (Fixes VMMT-949)
 
-// Curated workplace categories for high-impact Monday demo
+// Curated workplace keywords for Noto icon selection
 const WORKPLACE_KEYWORDS = [
   'thumbs', 'clap', 'party', 'fire', 'rocket', 'check', 'heart', 'smile',
   'laugh', 'joy', 'think', 'eyes', 'wave', 'pray', 'trophy', 'star', 'coffee',
   '100', 'sparkles', 'salute', 'mind-blown', 'ok', 'muscle', 'light-bulb'
 ];
 
-// Offline fallback template for when network is restricted
+// Curated workplace fallback items
 const FALLBACK_ITEMS = [
   { codepoint: '1f44d', tags: ['thumbs_up', 'approve', 'agree', 'lgtm', 'ok'], title: 'Thumbs Up', cat: 'Approval' },
-  { codepoint: '1f44f', tags: ['clapping_hands', 'applause', 'bravo', 'kudos'], title: 'Clapping Hands', cat: 'Reactions' },
+  { codepoint: '1f44f', tags: ['clapping_hands', 'applause', 'bravo', 'kudos'], title: 'Clapping Hands', cat: 'Celebration' },
   { codepoint: '1f389', tags: ['party_popper', 'celebrate', 'congrats', 'cheers'], title: 'Party Popper', cat: 'Celebration' },
   { codepoint: '1f525', tags: ['fire', 'lit', 'awesome', 'hot'], title: 'Fire', cat: 'Reactions' },
-  { codepoint: '1f680', tags: ['rocket', 'launch', 'ship_it', 'speed'], title: 'Rocket', cat: 'Workplace' },
+  { codepoint: '1f680', tags: ['rocket', 'launch', 'ship_it', 'speed'], title: 'Rocket', cat: 'Launch & Hype' },
   { codepoint: '2705',  tags: ['check_mark', 'done', 'approved', 'verified'], title: 'Check Mark', cat: 'Approval' },
-  { codepoint: '2764',  tags: ['red_heart', 'love', 'appreciation', 'thanks'], title: 'Red Heart', cat: 'Reactions' },
+  { codepoint: '2764',  tags: ['red_heart', 'love', 'appreciation', 'thanks'], title: 'Red Heart', cat: 'Gratitude' },
   { codepoint: '1f600', tags: ['grinning_face', 'smile', 'happy', 'positive'], title: 'Grinning Face', cat: 'Reactions' },
   { codepoint: '1f602', tags: ['tears_of_joy', 'lol', 'haha', 'funny'], title: 'Tears of Joy', cat: 'Reactions' },
-  { codepoint: '1f914', tags: ['thinking_face', 'ponder', 'hmm', 'curious'], title: 'Thinking Face', cat: 'Reactions' },
-  { codepoint: '1f440', tags: ['eyes', 'looking', 'review', 'watching'], title: 'Eyes Review', cat: 'Workplace' },
-  { codepoint: '1f44b', tags: ['waving_hand', 'hello', 'hi', 'bye'], title: 'Waving Hand', cat: 'Communication' },
-  { codepoint: '1f64f', tags: ['folded_hands', 'thank_you', 'please', 'grateful'], title: 'Folded Hands', cat: 'Communication' },
+  { codepoint: '1f914', tags: ['thinking_face', 'ponder', 'hmm', 'curious'], title: 'Thinking Face', cat: 'Work & Coffee' },
+  { codepoint: '1f440', tags: ['eyes', 'looking', 'review', 'watching'], title: 'Eyes Review', cat: 'Work & Coffee' },
+  { codepoint: '1f44b', tags: ['waving_hand', 'hello', 'hi', 'bye'], title: 'Waving Hand', cat: 'Gratitude' },
+  { codepoint: '1f64f', tags: ['folded_hands', 'thank_you', 'please', 'grateful'], title: 'Folded Hands', cat: 'Gratitude' },
   { codepoint: '1f3c6', tags: ['trophy', 'win', 'champion', 'success'], title: 'Trophy', cat: 'Celebration' },
   { codepoint: '2b50',  tags: ['star', 'favorite', 'great_job', 'highlight'], title: 'Star', cat: 'Celebration' },
-  { codepoint: '2615',  tags: ['hot_beverage', 'coffee', 'break', 'morning'], title: 'Coffee', cat: 'Workplace' },
+  { codepoint: '2615',  tags: ['hot_beverage', 'coffee', 'break', 'morning'], title: 'Coffee', cat: 'Work & Coffee' },
   { codepoint: '1f4af', tags: ['hundred_points', 'perfect', '100', 'score'], title: '100 Points', cat: 'Approval' },
   { codepoint: '2728',  tags: ['sparkles', 'magic', 'clean', 'new'], title: 'Sparkles', cat: 'Celebration' },
-  { codepoint: '1fae1', tags: ['saluting_face', 'yes_sir', 'respect', 'roger'], title: 'Salute', cat: 'Workplace' },
+  { codepoint: '1fae1', tags: ['saluting_face', 'yes_sir', 'respect', 'roger'], title: 'Salute', cat: 'Approval' },
   { codepoint: '1f92f', tags: ['exploding_head', 'mind_blown', 'shock', 'wow'], title: 'Mind Blown', cat: 'Reactions' },
   { codepoint: '1f44c', tags: ['ok_hand', 'perfect', 'sounds_good', 'fine'], title: 'OK Hand', cat: 'Approval' },
-  { codepoint: '1f4aa', tags: ['flexed_biceps', 'strong', 'power', 'teamwork'], title: 'Strong Muscle', cat: 'Workplace' },
-  { codepoint: '1f4a1', tags: ['light_bulb', 'idea', 'insight', 'solution'], title: 'Light Bulb', cat: 'Workplace' },
+  { codepoint: '1f4aa', tags: ['flexed_biceps', 'strong', 'power', 'teamwork'], title: 'Strong Muscle', cat: 'Launch & Hype' },
+  { codepoint: '1f4a1', tags: ['light_bulb', 'idea', 'insight', 'solution'], title: 'Light Bulb', cat: 'Launch & Hype' },
   { codepoint: '1f60e', tags: ['sunglasses', 'cool', 'chill', 'smooth'], title: 'Cool Sunglasses', cat: 'Reactions' }
 ];
 
-// Helper to download with timeout
+// Workplace synonym and intent expansion rules
+const WORKPLACE_SYNONYM_RULES = [
+  {
+    regex: /thumbs|check|ok|100|salute/i,
+    tags: ["lgtm", "approve", "approved", "yes", "agree", "ship it", "done", "ack", "good", "correct"],
+    category: "Approval"
+  },
+  {
+    regex: /clap|party|trophy|star|sparkles|crown/i,
+    tags: ["congrats", "congratulations", "bravo", "kudos", "celebrate", "win", "awesome", "great job", "woohoo", "milestone"],
+    category: "Celebration"
+  },
+  {
+    regex: /rocket|fire|zap|muscle|light_bulb|bulb/i,
+    tags: ["launch", "deploy", "deployed", "ship", "lit", "fast", "hot", "hype", "strong", "idea", "smart"],
+    category: "Launch & Hype"
+  },
+  {
+    regex: /smile|laugh|joy|rofl|grin|wink/i,
+    tags: ["lol", "haha", "funny", "happy", "lmao", "rofl", "nice", "heehaw"],
+    category: "Reactions"
+  },
+  {
+    regex: /pray|heart|wave|hug|handshake/i,
+    tags: ["thanks", "thank you", "ty", "appreciate", "please", "welcome", "hello", "hi", "hey", "teamwork"],
+    category: "Gratitude"
+  },
+  {
+    regex: /think|eyes|mind|coffee|sleep|clock|alarm/i,
+    tags: ["hmm", "looking", "review", "reviewing", "pr", "checking", "wait", "whoa", "wow", "caffeine", "morning", "brb", "busy"],
+    category: "Work & Coffee"
+  }
+];
+
+function normalizeTags(rawTags) {
+  const result = new Set();
+  for (const raw of rawTags) {
+    if (!raw) continue;
+    const clean = raw.replace(/:/g, '').trim().toLowerCase();
+    if (!clean) continue;
+    result.add(clean);
+    if (clean.includes('_') || clean.includes('-')) {
+      const spaceForm = clean.replace(/[_-]/g, ' ').replace(/\s+/g, ' ').trim();
+      result.add(spaceForm);
+      for (const word of spaceForm.split(' ')) {
+        if (word) result.add(word);
+      }
+    }
+  }
+  return Array.from(result);
+}
+
+function enrichWorkplaceMetadata(title, baseTags, initialCategories = []) {
+  const normTags = normalizeTags(baseTags);
+  const tagsSet = new Set(normTags);
+  const catsSet = new Set(initialCategories);
+  catsSet.add('Workplace');
+
+  const contextText = [title, ...normTags].join(' ');
+
+  for (const rule of WORKPLACE_SYNONYM_RULES) {
+    if (rule.regex.test(contextText)) {
+      for (const t of rule.tags) {
+        tagsSet.add(t);
+      }
+      catsSet.add(rule.category);
+    }
+  }
+
+  return {
+    tags: Array.from(tagsSet),
+    categories: Array.from(catsSet)
+  };
+}
+
+// Curated high-impact title and category overrides
+const TITLE_ENRICHMENT = {
+  '1f600': { title: 'Big Smile', cat: ['Reactions'], tags: ['smile', 'happy', 'positive', 'glad', 'friendly', 'good vibe'] },
+  '1f603': { title: 'Cheering Smile', cat: ['Reactions', 'Celebration'], tags: ['smile', 'cheerful', 'yay', 'happy', 'great news'] },
+  '1f61a': { title: 'Warm Appreciation', cat: ['Gratitude', 'Reactions'], tags: ['thanks', 'appreciation', 'warm', 'grateful'] },
+  '1f618': { title: 'Gratitude & Thanks', cat: ['Gratitude', 'Reactions'], tags: ['thanks', 'kudos', 'appreciation', 'kind'] },
+  '1f60d': { title: 'Loving This!', cat: ['Reactions', 'Approval'], tags: ['love', 'awesome', 'amazing', 'perfect', 'favorite', 'lgtm'] },
+  '263a_fe0f': { title: 'Warm Welcome', cat: ['Reactions', 'Gratitude'], tags: ['welcome', 'friendly', 'hello', 'pleased', 'good day'] },
+  '1fae1': { title: 'Salute / Roger That', cat: ['Approval'], tags: ['salute', 'roger', 'understood', 'on it', 'respect', 'aye aye'] },
+  '1f623': { title: 'Deep Focus & Hustle', cat: ['Work & Coffee', 'Reactions'], tags: ['focus', 'grind', 'hustle', 'working hard', 'deadline', 'effort'] },
+  '2b50': { title: 'Superstar Winner', cat: ['Celebration', 'Approval'], tags: ['star', 'winner', 'superstar', 'highlight', 'top tier', 'gold', 'kudos'] },
+  '1f31f': { title: 'Glowing Star Milestone', cat: ['Celebration'], tags: ['milestone', 'star', 'achievement', 'sparkle', 'excellence', 'great job'] },
+  '2728': { title: 'Sparkles / Polished & Fresh', cat: ['Celebration'], tags: ['sparkles', 'magic', 'clean', 'polished', 'fresh', 'new release', 'ship'] },
+  '1f525': { title: 'On Fire / Crushing It!', cat: ['Launch & Hype', 'Celebration', 'Reactions'], tags: ['fire', 'lit', 'awesome', 'hot', 'epic', 'trending', 'crushing it'] },
+  '1f4af': { title: '100% Perfect / Nailed It', cat: ['Approval', 'Celebration'], tags: ['100', 'hundred', 'perfect', 'score', 'accurate', 'lgtm', 'nailed it'] },
+  '1f389': { title: 'Team Celebration / Release Tada!', cat: ['Celebration'], tags: ['party', 'celebrate', 'congrats', 'tada', 'cheers', 'release', 'deploy', 'ship it', 'launch', 'milestone'] },
+  '2764_fe0f': { title: 'Red Heart Kudos', cat: ['Gratitude', 'Reactions'], tags: ['heart', 'love', 'thanks', 'appreciation', 'kudos', 'team love'] },
+  '2764': { title: 'Red Heart Kudos', cat: ['Gratitude', 'Reactions'], tags: ['heart', 'love', 'thanks', 'appreciation', 'kudos', 'team love'] },
+  '1f440': { title: 'Eyes on PR / Reviewing Now', cat: ['Work & Coffee', 'Approval'], tags: ['eyes', 'looking', 'review', 'pr', 'code review', 'watching', 'attention', 'investigating', 'take a look'] },
+  '1f4aa': { title: 'Flex / Strong Teamwork', cat: ['Launch & Hype', 'Celebration'], tags: ['muscle', 'strong', 'power', 'teamwork', 'hustle', 'energy', 'crushing it', 'heavy lifting'] },
+  '1f44f': { title: 'Applause / Standing Ovation', cat: ['Celebration', 'Reactions'], tags: ['clap', 'applause', 'bravo', 'kudos', 'congrats', 'cheer', 'great job', 'well done', 'standing ovation'] },
+  '1f44d': { title: 'Thumbs Up / LGTM Approved', cat: ['Approval'], tags: ['thumbs', 'up', 'approve', 'agree', 'lgtm', 'ok', 'yes', 'verified', 'passed', 'looks good to me', 'ship it'] },
+  '1f44e': { title: 'Thumbs Down / Needs Revisit', cat: ['Approval'], tags: ['thumbs', 'down', 'disapprove', 'no', 'disagree', 'needs changes', 'reject', 'blocker'] },
+  '1f680': { title: 'Rocket Launch / Ship It', cat: ['Launch & Hype', 'Celebration'], tags: ['rocket', 'launch', 'deploy', 'deployed', 'ship', 'ship it', 'production', 'speed'] }
+};
+
+// Minimal valid transparent 1x1 GIF buffer
+const MINIMAL_GIF = Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64');
+// Minimal valid transparent 1x1 WebP buffer
+const MINIMAL_WEBP = Buffer.from('UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoBAAEAAQAcJaQAA3AA/v39gAAAAA==', 'base64');
+
 async function fetchWithTimeout(url, ms = 7000) {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), ms);
@@ -57,13 +163,8 @@ async function fetchWithTimeout(url, ms = 7000) {
   }
 }
 
-// Minimal valid transparent 1x1 GIF buffer
-const MINIMAL_GIF = Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64');
-// Minimal valid transparent 1x1 WebP buffer
-const MINIMAL_WEBP = Buffer.from('UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoBAAEAAQAcJaQAA3AA/v39gAAAAA==', 'base64');
-
 async function build() {
-  console.log('🚀 Starting VBC Media Platform Catalog Ingestion...');
+  console.log('🚀 Starting VBC Media Platform Catalog Ingestion (Balanced GIFs + Stickers + Rich Search Index)...');
   await fs.mkdir(ASSETS_DIR, { recursive: true });
 
   let icons = [];
@@ -74,7 +175,7 @@ async function build() {
     icons = data.icons || [];
     console.log(`✅ Loaded Google Noto API manifest with ${icons.length} available icons`);
   } catch (err) {
-    console.warn(`⚠️ Network unavailable (${err.message}). Using local deterministic workplace fixtures.`);
+    console.warn(`⚠️ Network manifest unavailable (${err.message}). Using local deterministic workplace fixtures.`);
   }
 
   let selected = [];
@@ -84,7 +185,7 @@ async function build() {
     ).slice(0, 80);
   }
 
-  // If online selection yielded too few, merge fallback items
+  // Supplement with fallback pack if needed
   if (selected.length < 24) {
     console.log('📦 Supplementing with curated workplace fallback pack...');
     const existingCodes = new Set(selected.map(s => s.codepoint));
@@ -100,110 +201,187 @@ async function build() {
     }
   }
 
-  console.log(`⚙️ Processing ${selected.length} curated workplace media assets...`);
+  // Also include any previously saved local assets if not in selected
+  try {
+    const existingFiles = await fs.readdir(ASSETS_DIR);
+    const existingCodes = new Set(selected.map(s => s.codepoint));
+    for (const file of existingFiles) {
+      const match = file.match(/^noto_(.+)\.webp$/);
+      if (match && !existingCodes.has(match[1])) {
+        selected.push({
+          codepoint: match[1],
+          tags: [match[1]],
+          fallbackTitle: `Asset ${match[1]}`
+        });
+        existingCodes.add(match[1]);
+      }
+    }
+  } catch {
+    // Assets dir reading fallback
+  }
+
+  console.log(`⚙️ Processing ${selected.length} potential curated workplace media icons...`);
 
   const catalog = [];
   const sbom = [];
 
   for (const item of selected) {
     const code = item.codepoint;
-    const cleanTags = (item.tags || []).map(t => t.replace(/[:_]/g, ' ').trim().toLowerCase()).filter(Boolean);
-    const id = `noto_${code}`;
-    const title = item.fallbackTitle || cleanTags[0] || id;
-
     const webpUrl = `https://fonts.gstatic.com/s/e/notoemoji/latest/${code}/512.webp`;
     const gifUrl  = `https://fonts.gstatic.com/s/e/notoemoji/latest/${code}/512.gif`;
+
+    const localWebpPath = path.join(ASSETS_DIR, `noto_${code}.webp`);
+    const localGifPath  = path.join(ASSETS_DIR, `noto_${code}.gif`);
 
     let webpBuf = null;
     let gifBuf = null;
 
-    try {
-      const [webpRes, gifRes] = await Promise.all([
-        fetchWithTimeout(webpUrl, 6000),
-        fetchWithTimeout(gifUrl, 6000)
-      ]);
-      const [wArr, gArr] = await Promise.all([
-        webpRes.arrayBuffer(),
-        gifRes.arrayBuffer()
-      ]);
-      webpBuf = Buffer.from(wArr);
-      gifBuf = Buffer.from(gArr);
-    } catch {
-      // Offline fallback buffers
-      webpBuf = MINIMAL_WEBP;
-      gifBuf = MINIMAL_GIF;
+    // Check disk first for offline fast build
+    if (existsSync(localWebpPath)) {
+      webpBuf = await fs.readFile(localWebpPath);
+    }
+    if (existsSync(localGifPath)) {
+      gifBuf = await fs.readFile(localGifPath);
     }
 
-    // Verify MMS size cap (<= 450 KB)
-    let chosenMime = 'image/gif';
-    let chosenFullBuf = gifBuf;
-    let chosenFullExt = 'gif';
+    // If either buffer is missing, try to fetch online
+    if (!webpBuf || !gifBuf) {
+      try {
+        const [webpRes, gifRes] = await Promise.all([
+          !webpBuf ? fetchWithTimeout(webpUrl, 6000) : null,
+          !gifBuf  ? fetchWithTimeout(gifUrl, 6000)  : null
+        ]);
 
-    if (gifBuf.byteLength > MAX_MMS_BYTES) {
-      if (webpBuf.byteLength <= MAX_MMS_BYTES) {
-        chosenMime = 'image/webp';
-        chosenFullBuf = webpBuf;
-        chosenFullExt = 'webp';
+        if (webpRes) {
+          const wArr = await webpRes.arrayBuffer();
+          webpBuf = Buffer.from(wArr);
+          await fs.writeFile(localWebpPath, webpBuf);
+        }
+        if (gifRes) {
+          const gArr = await gifRes.arrayBuffer();
+          gifBuf = Buffer.from(gArr);
+          await fs.writeFile(localGifPath, gifBuf);
+        }
+      } catch {
+        // Skip icon if downloads failed and files not on disk
+      }
+    }
+
+    if (!webpBuf || !gifBuf) {
+      if (item.fallbackTitle) {
+        webpBuf = webpBuf || MINIMAL_WEBP;
+        gifBuf  = gifBuf  || MINIMAL_GIF;
       } else {
-        console.warn(`Skipping ${id}: both formats exceed 450 KB MMS ceiling`);
         continue;
       }
     }
 
-    const webpPath = path.join(ASSETS_DIR, `${id}.webp`);
-    const fullPath = path.join(ASSETS_DIR, `${id}.${chosenFullExt}`);
-
-    await fs.writeFile(webpPath, webpBuf);
-    await fs.writeFile(fullPath, chosenFullBuf);
-
-    const sha256 = crypto.createHash('sha256').update(chosenFullBuf).digest('hex');
-
-    // Categorization logic
-    const categories = ['Workplace'];
-    if (cleanTags.some(t => ['clap', 'popper', 'trophy', 'party', 'star', 'sparkles', '100'].some(k => t.includes(k)))) {
-      categories.push('Celebration');
-    }
-    if (cleanTags.some(t => ['thumbs', 'check', 'ok', 'verified', 'agree', 'approve'].some(k => t.includes(k)))) {
-      categories.push('Approval');
-    }
-    if (cleanTags.some(t => ['smile', 'laugh', 'joy', 'fire', 'heart', 'think', 'eyes', 'mind'].some(k => t.includes(k)))) {
-      categories.push('Reactions');
+    // Verify MMS size cap (<= 450 KB / 460800 bytes) strictly for both formats
+    if (gifBuf.byteLength > MAX_MMS_BYTES || webpBuf.byteLength > MAX_MMS_BYTES) {
+      console.warn(`Skipping icon ${code}: exceeds 450 KB MMS ceiling (GIF: ${gifBuf.byteLength} B, WebP: ${webpBuf.byteLength} B)`);
+      continue;
     }
 
-    const assetRecord = {
-      id,
-      title: title.charAt(0).toUpperCase() + title.slice(1),
-      type: chosenFullExt === 'gif' ? 'gif' : 'sticker',
-      tags: Array.from(new Set([...cleanTags, ...categories.map(c => c.toLowerCase())])),
-      categories,
-      thumbUrl: `/cdn/v1/assets/${id}.webp`,
-      fullUrl: `/cdn/v1/assets/${id}.${chosenFullExt}`,
-      byteSize: chosenFullBuf.byteLength,
+    // Always ensure files are written to disk
+    await fs.writeFile(localWebpPath, webpBuf);
+    await fs.writeFile(localGifPath, gifBuf);
+
+    const gifSha256  = crypto.createHash('sha256').update(gifBuf).digest('hex');
+    const webpSha256 = crypto.createHash('sha256').update(webpBuf).digest('hex');
+
+    // Title & categorization resolution
+    let baseTitle = item.fallbackTitle || (item.tags && item.tags[0]) || `Icon ${code}`;
+    let baseTags = item.tags || [code];
+    let baseCats = item.fallbackCategory ? [item.fallbackCategory] : ['Workplace'];
+
+    // Check skin tone variants & title enrichment
+    let cleanCode = code;
+    let toneSuffix = '';
+    if (code.includes('_1f3f')) {
+      cleanCode = code.split('_')[0];
+      toneSuffix = ' (Skin Tone)';
+    }
+
+    const enrichment = TITLE_ENRICHMENT[code] || TITLE_ENRICHMENT[cleanCode];
+    if (enrichment) {
+      baseTitle = enrichment.title + toneSuffix;
+      if (enrichment.cat) baseCats.push(...enrichment.cat);
+      if (enrichment.tags) baseTags.push(...enrichment.tags);
+    }
+
+    const { tags: enrichedTags, categories: enrichedCats } = enrichWorkplaceMetadata(baseTitle, baseTags, baseCats);
+
+    const titleCapitalized = baseTitle.charAt(0).toUpperCase() + baseTitle.slice(1);
+
+    // 1. GIF entry
+    const gifId = `gif_${code}`;
+    const gifAsset = {
+      id: gifId,
+      title: titleCapitalized,
+      type: 'gif',
+      tags: enrichedTags,
+      categories: enrichedCats,
+      searchText: [titleCapitalized, ...enrichedTags, ...enrichedCats, 'gif'].join(' ').toLowerCase(),
+      thumbUrl: `/cdn/v1/assets/noto_${code}.webp`, // Always .webp for 3x faster grid previews
+      fullUrl: `/cdn/v1/assets/noto_${code}.gif`,   // .gif for full delivery
+      byteSize: gifBuf.byteLength,
       width: 512,
       height: 512,
-      mimeType: chosenMime,
+      mimeType: 'image/gif',
       mmsCompliant: true,
       license: 'CC-BY-4.0',
-      sha256
+      sha256: gifSha256
     };
-
-    catalog.push(assetRecord);
+    catalog.push(gifAsset);
 
     sbom.push({
-      assetId: id,
-      fileName: `${id}.${chosenFullExt}`,
+      assetId: gifId,
+      fileName: `noto_${code}.gif`,
+      sourceUrl: gifUrl,
+      spdxLicense: 'CC-BY-4.0',
+      copyrightHolder: 'Google LLC (Noto Animated Emoji)',
+      sha256: gifSha256,
+      byteSize: gifBuf.byteLength,
+      mmsCompliant: true,
+      verifiedAt: new Date().toISOString()
+    });
+
+    // 2. Sticker entry
+    const stkId = `stk_${code}`;
+    const stkAsset = {
+      id: stkId,
+      title: titleCapitalized,
+      type: 'sticker',
+      tags: enrichedTags,
+      categories: enrichedCats,
+      searchText: [titleCapitalized, ...enrichedTags, ...enrichedCats, 'sticker'].join(' ').toLowerCase(),
+      thumbUrl: `/cdn/v1/assets/noto_${code}.webp`,
+      fullUrl: `/cdn/v1/assets/noto_${code}.webp`,  // .webp for sticker delivery
+      byteSize: webpBuf.byteLength,
+      width: 512,
+      height: 512,
+      mimeType: 'image/webp',
+      mmsCompliant: true,
+      license: 'CC-BY-4.0',
+      sha256: webpSha256
+    };
+    catalog.push(stkAsset);
+
+    sbom.push({
+      assetId: stkId,
+      fileName: `noto_${code}.webp`,
       sourceUrl: webpUrl,
       spdxLicense: 'CC-BY-4.0',
       copyrightHolder: 'Google LLC (Noto Animated Emoji)',
-      sha256,
-      byteSize: chosenFullBuf.byteLength,
+      sha256: webpSha256,
+      byteSize: webpBuf.byteLength,
       mmsCompliant: true,
       verifiedAt: new Date().toISOString()
     });
   }
 
   const catalogManifest = {
-    version: '1.0.0',
+    version: '1.1.0',
     generatedAt: new Date().toISOString(),
     maxMmsBytes: MAX_MMS_BYTES,
     count: catalog.length,
@@ -254,8 +432,13 @@ Source: https://unicode.org/copyright.html
 `;
   await fs.writeFile('./public/THIRD_PARTY_NOTICES.txt', notices);
 
+  const gifCount = catalog.filter(c => c.type === 'gif').length;
+  const stkCount = catalog.filter(c => c.type === 'sticker').length;
+
   console.log(`🎉 Catalog ingestion completed successfully!`);
-  console.log(`   - Assets generated: ${catalog.length}`);
+  console.log(`   - Total catalog entries: ${catalog.length}`);
+  console.log(`   - GIF entries: ${gifCount}`);
+  console.log(`   - Sticker entries: ${stkCount}`);
   console.log(`   - Max MMS byte size: ${Math.max(...catalog.map(c => c.byteSize))} bytes (Cap: ${MAX_MMS_BYTES} bytes)`);
   console.log(`   - SBOM generated with ${sbom.length} cryptographic records.`);
 }

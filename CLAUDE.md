@@ -1,9 +1,9 @@
-# CLAUDE.md — VBC In-House Media SDK & Executive Demo PoC
+# CLAUDE.md — In-House Media SDK & Executive Demo PoC
 
 > **Canonical Config:** The official agent rules, settings, and skills are maintained under [`.claude/`](./.claude/).
 > - Agent Constitution: [`.claude/CLAUDE.md`](./.claude/CLAUDE.md)
 > - Platform Settings: [`.claude/settings.json`](./.claude/settings.json)
-> - Engineering Skills: [`.claude/skills/vbc-media-platform/SKILL.md`](./.claude/skills/vbc-media-platform/SKILL.md)
+> - Engineering Skills: [`.claude/skills/media-platform/SKILL.md`](./.claude/skills/media-platform/SKILL.md)
 
 ---
 

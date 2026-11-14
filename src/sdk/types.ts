@@ -6,6 +6,7 @@ export interface MediaAsset {
   type: MediaType;
   tags: string[];
   categories: string[];
+  searchText: string;    // Pre-computed lowercase search index
   thumbUrl: string;      // e.g., "/cdn/v1/assets/noto_1f680.webp" or native emoji char
   fullUrl: string;       // e.g., "/cdn/v1/assets/noto_1f680.gif"
   byteSize: number;      // Strictly <= 460800 (450 KB)
