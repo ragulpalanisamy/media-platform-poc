@@ -1,4 +1,4 @@
-# Vonage VBC In-House Media Platform & Cross-Platform SDK (PoC)
+# Media Platform POC
 
 > **Senior Architect Initiative**  
 > 100% In-House • Zero Third-Party Feeds • Zero Query Leakage • Sub-Millisecond Search • Carrier MMS Safe (<450 KB) • Cryptographic Legal SBOM

@@ -1,10 +1,11 @@
 {
   "name": "media-platform-poc",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "clean": "node -e \"const fs = require('fs'); ['dist'].forEach(d => fs.rmSync(d, {recursive: true, force: true})); console.log('Cleaned dist/');\"",
     "build:catalog": "node scripts/build-catalog.mjs",
     "build": "node scripts/build-catalog.mjs && vite build && node scripts/verify-build.mjs",
     "preview": "vite preview",

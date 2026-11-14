@@ -14,12 +14,15 @@
           type="text"
           placeholder="Search GIFs, stickers, emojis..."
           class="picker-search-input"
+          autocomplete="off"
+          spellcheck="false"
           @input="onSearchInput"
         />
         <button
           v-if="searchQuery"
           class="search-clear-btn"
           title="Clear search"
+          aria-label="Clear search query"
           @click="clearSearch"
         >
           ✕
@@ -34,10 +37,12 @@
     </div>
 
     <!-- Navigation Tabs -->
-    <div class="tabs-nav">
+    <div class="tabs-nav" role="tablist">
       <button
         v-for="tab in tabs"
         :key="tab.id"
+        role="tab"
+        :aria-selected="activeTab === tab.id"
         class="tab-btn"
         :class="{ active: activeTab === tab.id }"
         @click="selectTab(tab.id)"
@@ -80,7 +85,7 @@
         </p>
       </div>
 
-      <!-- Asset Items -->
+      <!-- Asset Items with CSS Content-Visibility Virtualization -->
       <div
         v-for="asset in displayItems"
         v-else
@@ -101,6 +106,7 @@
             :src="asset.thumbUrl"
             :alt="asset.title"
             loading="lazy"
+            decoding="async"
             class="media-thumb-img"
           />
           <div class="asset-meta-overlay">
@@ -130,7 +136,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue';
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
 import type { MediaAsset, MediaType, SearchStats } from './types';
 import { VbcMediaCore } from './vbc-media-core';
 
@@ -175,22 +181,19 @@ const tabs: TabItem[] = [
 const activeTab = ref<TabId>('all');
 const activeCategory = ref<string>('All');
 const searchQuery = ref<string>('');
-const searchLatencyMs = ref<number>(0.12);
+const searchLatencyMs = ref<number>(0.08);
 const isLoading = ref<boolean>(true);
 const recentsList = ref<MediaAsset[]>([]);
 const searchInputRef = ref<HTMLInputElement | null>(null);
 
-let debounceTimer: any = null;
+let debounceTimer: ReturnType<typeof setTimeout> | null = null;
 
 const recentsCount = computed(() => recentsList.value.length);
 
-const availableCategories = computed(() => {
-  return ['All', 'Workplace', 'Reactions', 'Celebration', 'Approval', 'Communication'];
-});
+const availableCategories = ['All', 'Workplace', 'Reactions', 'Celebration', 'Approval', 'Communication'];
 
 const gridClass = computed(() => {
-  if (activeTab.value === 'emoji') return 'grid-emojis';
-  return 'grid-media';
+  return activeTab.value === 'emoji' ? 'grid-emojis' : 'grid-media';
 });
 
 // Display results based on active tab, search query, and category
@@ -208,13 +211,12 @@ const displayItems = computed<MediaAsset[]>(() => {
   const typeParam: MediaType | 'all' =
     activeTab.value === 'all' ? 'all' : (activeTab.value as MediaType);
 
-  const { items, stats } = core.search(
+  const { items } = core.search(
     searchQuery.value,
     typeParam,
     activeCategory.value
   );
 
-  // Filter out any asset exceeding max MMS bytes ceiling
   return items.filter(i => i.byteSize <= props.maxMmsBytes);
 });
 
@@ -242,10 +244,10 @@ function clearSearch() {
 }
 
 function onSearchInput() {
-  clearTimeout(debounceTimer);
+  if (debounceTimer) clearTimeout(debounceTimer);
   debounceTimer = setTimeout(() => {
     triggerSearch();
-  }, 80);
+  }, 60);
 }
 
 function triggerSearch() {
@@ -277,6 +279,10 @@ onMounted(async () => {
   triggerSearch();
 });
 
+onUnmounted(() => {
+  if (debounceTimer) clearTimeout(debounceTimer);
+});
+
 watch(
   () => props.baseUrl,
   async (newUrl) => {
@@ -300,7 +306,7 @@ watch(
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   user-select: none;
-  transition: all 0.2s ease;
+  contain: layout style;
 }
 
 /* Dark Theme */
@@ -432,7 +438,7 @@ watch(
   padding: 8px 4px 10px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
-  transition: all 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .tab-btn:hover {
@@ -478,7 +484,7 @@ watch(
   font-size: 11.5px;
   padding: 3px 10px;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: background 0.15s, color 0.15s;
 }
 
 .theme-light .cat-pill {
@@ -517,7 +523,7 @@ watch(
   gap: 6px;
 }
 
-/* Card Styling */
+/* Card Styling with Modern Browser Content-Visibility */
 .asset-card {
   position: relative;
   border-radius: 8px;
@@ -525,10 +531,12 @@ watch(
   cursor: pointer;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.15s ease, border-color 0.15s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  content-visibility: auto;
+  contain-intrinsic-size: 96px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
 }
 
 .theme-light .asset-card {
@@ -556,7 +564,6 @@ watch(
   width: 100%;
   height: 100%;
   object-fit: contain;
-  image-rendering: auto;
 }
 
 .asset-meta-overlay {

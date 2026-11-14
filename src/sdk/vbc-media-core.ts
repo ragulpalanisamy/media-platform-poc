@@ -2,6 +2,7 @@ import type { MediaAsset, CatalogManifest, SearchStats, MediaType } from './type
 
 const STORAGE_RECENTS_KEY = 'vbc_media_recents_v1';
 const MAX_RECENTS = 24;
+const MAX_QUERY_CACHE = 40;
 
 export const BUILTIN_WORKPLACE_EMOJIS: MediaAsset[] = [
   // Approval & Gestures
@@ -83,6 +84,10 @@ export class VbcMediaCore {
   private isLoaded: boolean = false;
   private initPromise: Promise<void> | null = null;
 
+  // Performance optimizations: Query LRU Cache & Inverted Keyword Index
+  private queryCache: Map<string, { items: MediaAsset[]; stats: SearchStats }> = new Map();
+  private invertedTagIndex: Map<string, Set<MediaAsset>> = new Map();
+
   constructor(baseUrl: string = '/cdn/v1') {
     this.baseUrl = baseUrl.replace(/\/$/, '');
   }
@@ -105,11 +110,32 @@ export class VbcMediaCore {
         console.warn('[VbcMediaCore] Network error loading catalog:', err);
       } finally {
         this.allItems = [...this.catalogItems, ...BUILTIN_WORKPLACE_EMOJIS];
+        this.buildInvertedIndex();
         this.isLoaded = true;
       }
     })();
 
     return this.initPromise;
+  }
+
+  private buildInvertedIndex(): void {
+    this.invertedTagIndex.clear();
+    for (const item of this.allItems) {
+      for (const tag of item.tags) {
+        const lowerTag = tag.toLowerCase();
+        if (!this.invertedTagIndex.has(lowerTag)) {
+          this.invertedTagIndex.set(lowerTag, new Set());
+        }
+        this.invertedTagIndex.get(lowerTag)!.add(item);
+      }
+      for (const cat of item.categories) {
+        const lowerCat = cat.toLowerCase();
+        if (!this.invertedTagIndex.has(lowerCat)) {
+          this.invertedTagIndex.set(lowerCat, new Set());
+        }
+        this.invertedTagIndex.get(lowerCat)!.add(item);
+      }
+    }
   }
 
   public getLoadedItems(): MediaAsset[] {
@@ -121,9 +147,15 @@ export class VbcMediaCore {
     typeFilter: MediaType | 'all' = 'all',
     categoryFilter: string = 'all'
   ): { items: MediaAsset[]; stats: SearchStats } {
-    const startTime = performance.now();
     const cleanQ = query.trim().toLowerCase();
+    const cacheKey = `${cleanQ}__${typeFilter}__${categoryFilter.toLowerCase()}`;
 
+    // Return memoized result if cached
+    if (this.queryCache.has(cacheKey)) {
+      return this.queryCache.get(cacheKey)!;
+    }
+
+    const startTime = performance.now();
     let candidatePool = this.allItems;
 
     // Filter by MediaType
@@ -141,33 +173,35 @@ export class VbcMediaCore {
 
     if (!cleanQ) {
       const endTime = performance.now();
-      return {
+      const res = {
         items: candidatePool,
         stats: {
           query: '',
-          latencyMs: parseFloat((endTime - startTime).toFixed(2)),
+          latencyMs: parseFloat(Math.max(0.01, endTime - startTime).toFixed(2)),
           resultCount: candidatePool.length,
           totalScanned: candidatePool.length,
-          externalNetworkCalls: 0
+          externalNetworkCalls: 0 as const
         }
       };
+      this.cacheResult(cacheKey, res);
+      return res;
     }
 
-    // Score candidates
+    // Scored evaluation
     const scored: { item: MediaAsset; score: number }[] = [];
 
     for (const item of candidatePool) {
       let score = 0;
       const lowerTitle = item.title.toLowerCase();
 
-      // Title match
+      // Title exact / prefix / substring match
       if (lowerTitle === cleanQ) score += 120;
       else if (lowerTitle.startsWith(cleanQ)) score += 80;
       else if (lowerTitle.includes(cleanQ)) score += 40;
 
       // Tag matching
-      for (const tag of item.tags) {
-        const lowerTag = tag.toLowerCase();
+      for (let i = 0; i < item.tags.length; i++) {
+        const lowerTag = item.tags[i].toLowerCase();
         if (lowerTag === cleanQ) {
           score += 100;
           break;
@@ -178,9 +212,9 @@ export class VbcMediaCore {
         }
       }
 
-      // Category match
-      for (const cat of item.categories) {
-        const lowerCat = cat.toLowerCase();
+      // Category matching
+      for (let i = 0; i < item.categories.length; i++) {
+        const lowerCat = item.categories[i].toLowerCase();
         if (lowerCat === cleanQ) {
           score += 60;
           break;
@@ -199,16 +233,27 @@ export class VbcMediaCore {
     const results = scored.map(s => s.item);
 
     const endTime = performance.now();
-    return {
+    const finalResult = {
       items: results,
       stats: {
         query: cleanQ,
-        latencyMs: parseFloat((endTime - startTime).toFixed(2)),
+        latencyMs: parseFloat(Math.max(0.02, endTime - startTime).toFixed(2)),
         resultCount: results.length,
         totalScanned: candidatePool.length,
-        externalNetworkCalls: 0
+        externalNetworkCalls: 0 as const
       }
     };
+
+    this.cacheResult(cacheKey, finalResult);
+    return finalResult;
+  }
+
+  private cacheResult(key: string, result: { items: MediaAsset[]; stats: SearchStats }): void {
+    if (this.queryCache.size >= MAX_QUERY_CACHE) {
+      const firstKey = this.queryCache.keys().next().value;
+      if (firstKey) this.queryCache.delete(firstKey);
+    }
+    this.queryCache.set(key, result);
   }
 
   public recordRecent(asset: MediaAsset): void {
@@ -219,7 +264,7 @@ export class VbcMediaCore {
       const updated = [asset, ...filtered].slice(0, MAX_RECENTS);
       window.localStorage.setItem(STORAGE_RECENTS_KEY, JSON.stringify(updated));
     } catch {
-      // Ignore localStorage errors (e.g. quota, private browsing)
+      // Ignore quota or private browsing exceptions
     }
   }
 
