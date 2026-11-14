@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T09:30:07.720Z",
+  "generatedAt": "2026-11-14T09:38:33.114Z",
   "auditStatus": "PASS",
   "totalAudited": 146,
   "maxMmsCeiling": 460800,
@@ -18,7 +18,7 @@
       "sha256": "6f9e0ded0161c86e3d7ab1f42c8d0ad4c609bbce86d0c04092127f94b373134b",
       "byteSize": 194821,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.414Z"
+      "verifiedAt": "2026-11-14T09:38:32.814Z"
     },
     {
       "assetId": "stk_1f44d",
@@ -29,7 +29,7 @@
       "sha256": "f456f329ec2457828e0511f31b855e1b3b21c91f53d7d465dc3a1aa7d3b73383",
       "byteSize": 159212,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.415Z"
+      "verifiedAt": "2026-11-14T09:38:32.816Z"
     },
     {
       "assetId": "gif_1f44f",
@@ -40,7 +40,7 @@
       "sha256": "36a2cd7143f1028f746c470889a1ba6d8b71f073b97f5dbdd1130ee2b000b867",
       "byteSize": 194400,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.421Z"
+      "verifiedAt": "2026-11-14T09:38:32.821Z"
     },
     {
       "assetId": "stk_1f44f",
@@ -51,7 +51,7 @@
       "sha256": "424f978963357da085a444e1b659028a5f7ccd927d72158ef5c97c82d3ddfd20",
       "byteSize": 163090,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.421Z"
+      "verifiedAt": "2026-11-14T09:38:32.821Z"
     },
     {
       "assetId": "gif_1f389",
@@ -62,7 +62,7 @@
       "sha256": "86879c45175f3901a8676d9b0bb5132c7a98b20a9f40487c21e4c896ce196616",
       "byteSize": 395755,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.427Z"
+      "verifiedAt": "2026-11-14T09:38:32.827Z"
     },
     {
       "assetId": "stk_1f389",
@@ -73,7 +73,7 @@
       "sha256": "aeff875df341bb7136fa4c84538000a3d4aea8a6dd16245ee8fa1c8bbfeb6ddc",
       "byteSize": 304340,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.427Z"
+      "verifiedAt": "2026-11-14T09:38:32.827Z"
     },
     {
       "assetId": "gif_1f525",
@@ -84,7 +84,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.431Z"
+      "verifiedAt": "2026-11-14T09:38:32.831Z"
     },
     {
       "assetId": "stk_1f525",
@@ -95,7 +95,7 @@
       "sha256": "8c18972a71041700a1da4d9a1586640fb6d55eff4dc64efd29efde6a384a2ff5",
       "byteSize": 189752,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.431Z"
+      "verifiedAt": "2026-11-14T09:38:32.831Z"
     },
     {
       "assetId": "gif_1f680",
@@ -106,7 +106,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.436Z"
+      "verifiedAt": "2026-11-14T09:38:32.835Z"
     },
     {
       "assetId": "stk_1f680",
@@ -117,7 +117,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.436Z"
+      "verifiedAt": "2026-11-14T09:38:32.835Z"
     },
     {
       "assetId": "gif_2705",
@@ -128,7 +128,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.439Z"
+      "verifiedAt": "2026-11-14T09:38:32.839Z"
     },
     {
       "assetId": "stk_2705",
@@ -139,7 +139,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.439Z"
+      "verifiedAt": "2026-11-14T09:38:32.839Z"
     },
     {
       "assetId": "gif_2764",
@@ -150,7 +150,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.442Z"
+      "verifiedAt": "2026-11-14T09:38:32.843Z"
     },
     {
       "assetId": "stk_2764",
@@ -161,7 +161,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.442Z"
+      "verifiedAt": "2026-11-14T09:38:32.843Z"
     },
     {
       "assetId": "gif_1f600",
@@ -172,7 +172,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.446Z"
+      "verifiedAt": "2026-11-14T09:38:32.846Z"
     },
     {
       "assetId": "stk_1f600",
@@ -183,7 +183,7 @@
       "sha256": "99ae57c7ca271adaa211f2c3e599e996dcc2d962564e49bcd979671e5c73146f",
       "byteSize": 369214,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.446Z"
+      "verifiedAt": "2026-11-14T09:38:32.846Z"
     },
     {
       "assetId": "gif_1f602",
@@ -194,7 +194,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.449Z"
+      "verifiedAt": "2026-11-14T09:38:32.850Z"
     },
     {
       "assetId": "stk_1f602",
@@ -205,7 +205,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.449Z"
+      "verifiedAt": "2026-11-14T09:38:32.850Z"
     },
     {
       "assetId": "gif_1f914",
@@ -216,7 +216,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.452Z"
+      "verifiedAt": "2026-11-14T09:38:32.855Z"
     },
     {
       "assetId": "stk_1f914",
@@ -227,7 +227,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.452Z"
+      "verifiedAt": "2026-11-14T09:38:32.855Z"
     },
     {
       "assetId": "gif_1f440",
@@ -238,7 +238,7 @@
       "sha256": "cd74f25ba724237765bc5d481a4a1c20299a4cd85ee8949b78123a0cb729a1b0",
       "byteSize": 309202,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.456Z"
+      "verifiedAt": "2026-11-14T09:38:32.859Z"
     },
     {
       "assetId": "stk_1f440",
@@ -249,7 +249,7 @@
       "sha256": "44da2fbd6e9ec1dee07808fef5216fb8393d78155c7f104be99525215961e07e",
       "byteSize": 155162,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.456Z"
+      "verifiedAt": "2026-11-14T09:38:32.859Z"
     },
     {
       "assetId": "gif_1f44b",
@@ -260,7 +260,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.459Z"
+      "verifiedAt": "2026-11-14T09:38:32.863Z"
     },
     {
       "assetId": "stk_1f44b",
@@ -271,7 +271,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.459Z"
+      "verifiedAt": "2026-11-14T09:38:32.863Z"
     },
     {
       "assetId": "gif_1f64f",
@@ -282,7 +282,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.462Z"
+      "verifiedAt": "2026-11-14T09:38:32.866Z"
     },
     {
       "assetId": "stk_1f64f",
@@ -293,7 +293,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.462Z"
+      "verifiedAt": "2026-11-14T09:38:32.866Z"
     },
     {
       "assetId": "gif_1f3c6",
@@ -304,7 +304,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.466Z"
+      "verifiedAt": "2026-11-14T09:38:32.870Z"
     },
     {
       "assetId": "stk_1f3c6",
@@ -315,7 +315,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.466Z"
+      "verifiedAt": "2026-11-14T09:38:32.870Z"
     },
     {
       "assetId": "gif_2b50",
@@ -326,7 +326,7 @@
       "sha256": "96c83285a1b4f1bdc1b61cab8f1a26b33fe820392d32f4dfce76f06923a012b5",
       "byteSize": 276736,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.470Z"
+      "verifiedAt": "2026-11-14T09:38:32.875Z"
     },
     {
       "assetId": "stk_2b50",
@@ -337,7 +337,7 @@
       "sha256": "b93aeff891b9601812738449efedab7085b0f6da74c2c39edd652ad523fc76b2",
       "byteSize": 310002,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.470Z"
+      "verifiedAt": "2026-11-14T09:38:32.875Z"
     },
     {
       "assetId": "gif_2615",
@@ -348,7 +348,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.474Z"
+      "verifiedAt": "2026-11-14T09:38:32.878Z"
     },
     {
       "assetId": "stk_2615",
@@ -359,7 +359,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.474Z"
+      "verifiedAt": "2026-11-14T09:38:32.878Z"
     },
     {
       "assetId": "gif_1f4af",
@@ -370,7 +370,7 @@
       "sha256": "35f5b266c961602799985a5bd71e282738efe2d80ee1a0db13e9c12fead01581",
       "byteSize": 168659,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.479Z"
+      "verifiedAt": "2026-11-14T09:38:32.882Z"
     },
     {
       "assetId": "stk_1f4af",
@@ -381,7 +381,7 @@
       "sha256": "c9fdc6075233c9fbd1b77b4df0107187a543223b9ff566fd65a887f221b21008",
       "byteSize": 360892,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.479Z"
+      "verifiedAt": "2026-11-14T09:38:32.882Z"
     },
     {
       "assetId": "gif_2728",
@@ -392,7 +392,7 @@
       "sha256": "e598e4b90f9f6206ab6316defd43ef3305c14ebbb03840b09dca8f8685888261",
       "byteSize": 158633,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.484Z"
+      "verifiedAt": "2026-11-14T09:38:32.886Z"
     },
     {
       "assetId": "stk_2728",
@@ -403,7 +403,7 @@
       "sha256": "6f02d6b946908b6bb33452ff81f613928b0a30c09d51d0b43a85d35359e5d1cc",
       "byteSize": 187840,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.484Z"
+      "verifiedAt": "2026-11-14T09:38:32.886Z"
     },
     {
       "assetId": "gif_1fae1",
@@ -414,7 +414,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.489Z"
+      "verifiedAt": "2026-11-14T09:38:32.890Z"
     },
     {
       "assetId": "stk_1fae1",
@@ -425,7 +425,7 @@
       "sha256": "2e412f3ed5161935042c979329a55d5c3348dcce497e27b05a590b0c29f8e99d",
       "byteSize": 383548,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.489Z"
+      "verifiedAt": "2026-11-14T09:38:32.890Z"
     },
     {
       "assetId": "gif_1f92f",
@@ -436,7 +436,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.493Z"
+      "verifiedAt": "2026-11-14T09:38:32.893Z"
     },
     {
       "assetId": "stk_1f92f",
@@ -447,7 +447,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.493Z"
+      "verifiedAt": "2026-11-14T09:38:32.893Z"
     },
     {
       "assetId": "gif_1f44c",
@@ -458,7 +458,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.497Z"
+      "verifiedAt": "2026-11-14T09:38:32.896Z"
     },
     {
       "assetId": "stk_1f44c",
@@ -469,7 +469,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.497Z"
+      "verifiedAt": "2026-11-14T09:38:32.896Z"
     },
     {
       "assetId": "gif_1f4aa",
@@ -480,7 +480,7 @@
       "sha256": "e3b3eed21515c83a387c227371c3566456f43c597c27bb8ed7096db15098de5b",
       "byteSize": 306413,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.502Z"
+      "verifiedAt": "2026-11-14T09:38:32.902Z"
     },
     {
       "assetId": "stk_1f4aa",
@@ -491,7 +491,7 @@
       "sha256": "fdbf8494ad8c8235bcfec94e751b5570a398bb328020e5282f3923535389548e",
       "byteSize": 302784,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.502Z"
+      "verifiedAt": "2026-11-14T09:38:32.902Z"
     },
     {
       "assetId": "gif_1f4a1",
@@ -502,7 +502,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.505Z"
+      "verifiedAt": "2026-11-14T09:38:32.906Z"
     },
     {
       "assetId": "stk_1f4a1",
@@ -513,7 +513,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.505Z"
+      "verifiedAt": "2026-11-14T09:38:32.906Z"
     },
     {
       "assetId": "gif_1f60e",
@@ -524,7 +524,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.510Z"
+      "verifiedAt": "2026-11-14T09:38:32.909Z"
     },
     {
       "assetId": "stk_1f60e",
@@ -535,7 +535,7 @@
       "sha256": "1e4038478558692869e5bc4540ac05dce586ce1513587e77106c0749b3ce4b2b",
       "byteSize": 46,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.510Z"
+      "verifiedAt": "2026-11-14T09:38:32.909Z"
     },
     {
       "assetId": "gif_1f31f",
@@ -546,7 +546,7 @@
       "sha256": "afad2fcfbaee6af6749cb8bf9b63bb4408e69ae45f29305aa596a3f7fd855faa",
       "byteSize": 148541,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.513Z"
+      "verifiedAt": "2026-11-14T09:38:32.913Z"
     },
     {
       "assetId": "stk_1f31f",
@@ -557,7 +557,7 @@
       "sha256": "0fe335effdfa7a35334ebd1f2c4b4ba12bfb7a21dd44a458080bc45b365a073d",
       "byteSize": 194954,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.513Z"
+      "verifiedAt": "2026-11-14T09:38:32.913Z"
     },
     {
       "assetId": "gif_1f44d_1f3fb",
@@ -568,7 +568,7 @@
       "sha256": "0205f93f58998c209984fa81f5278cfce940272648a661df7cdf5c051589f903",
       "byteSize": 262493,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.518Z"
+      "verifiedAt": "2026-11-14T09:38:32.917Z"
     },
     {
       "assetId": "stk_1f44d_1f3fb",
@@ -579,7 +579,7 @@
       "sha256": "44c6b8622f7e8c198b34c4489ee783855d67d9d0ba207141fbc84a4514c6d0ea",
       "byteSize": 149136,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.518Z"
+      "verifiedAt": "2026-11-14T09:38:32.917Z"
     },
     {
       "assetId": "gif_1f44d_1f3fc",
@@ -590,7 +590,7 @@
       "sha256": "ccc7eff7946a8e00c489b71545f727316fdb8d80fedf888ea12166df7d83c76c",
       "byteSize": 202909,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.522Z"
+      "verifiedAt": "2026-11-14T09:38:32.921Z"
     },
     {
       "assetId": "stk_1f44d_1f3fc",
@@ -601,7 +601,7 @@
       "sha256": "7f7717d3adcd346c92a194121c37a34b3e41ba84266c23beb41ec4c549a6eb1f",
       "byteSize": 130618,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.522Z"
+      "verifiedAt": "2026-11-14T09:38:32.921Z"
     },
     {
       "assetId": "gif_1f44d_1f3fd",
@@ -612,7 +612,7 @@
       "sha256": "a1e9fdee1105686638a68b1739373c9745b7c7fdf806e96855c266e5be4b3efa",
       "byteSize": 192598,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.525Z"
+      "verifiedAt": "2026-11-14T09:38:32.925Z"
     },
     {
       "assetId": "stk_1f44d_1f3fd",
@@ -623,7 +623,7 @@
       "sha256": "8a4889157346a1bcd92a26959fcd41daf03889b40e8d4a4f919d65665a6d8cab",
       "byteSize": 113392,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.525Z"
+      "verifiedAt": "2026-11-14T09:38:32.925Z"
     },
     {
       "assetId": "gif_1f44d_1f3fe",
@@ -634,7 +634,7 @@
       "sha256": "cc35b853e3b1df445b64a1937a8a315e8158c8b2d03c454d6b5520165dec1f40",
       "byteSize": 181475,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.530Z"
+      "verifiedAt": "2026-11-14T09:38:32.929Z"
     },
     {
       "assetId": "stk_1f44d_1f3fe",
@@ -645,7 +645,7 @@
       "sha256": "d6735dc4f6731b207237df4e5e77bea7dd2a6a6e29164cf86f9e2aaa09c6838f",
       "byteSize": 119508,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.530Z"
+      "verifiedAt": "2026-11-14T09:38:32.929Z"
     },
     {
       "assetId": "gif_1f44d_1f3ff",
@@ -656,7 +656,7 @@
       "sha256": "cfc305b50dccde0d101ec70313991434ef4d93ee81913160496d8b5d200ae235",
       "byteSize": 193097,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.533Z"
+      "verifiedAt": "2026-11-14T09:38:32.933Z"
     },
     {
       "assetId": "stk_1f44d_1f3ff",
@@ -667,7 +667,7 @@
       "sha256": "ced021f2a18fdb58a3ebd3ae2c47883c901934705ad8301e83ad7a4071201f02",
       "byteSize": 108156,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.533Z"
+      "verifiedAt": "2026-11-14T09:38:32.933Z"
     },
     {
       "assetId": "gif_1f44e",
@@ -678,7 +678,7 @@
       "sha256": "9700a6f5a4ef2ea4b966cc13be1b1d75e888e732c8bfeec5e269889f2f0774c8",
       "byteSize": 203397,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.537Z"
+      "verifiedAt": "2026-11-14T09:38:32.937Z"
     },
     {
       "assetId": "stk_1f44e",
@@ -689,7 +689,7 @@
       "sha256": "9e03c03aff588ce944addcbc80ed16a80146c70546a795adc40201b4a3b5a184",
       "byteSize": 169708,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.537Z"
+      "verifiedAt": "2026-11-14T09:38:32.937Z"
     },
     {
       "assetId": "gif_1f44e_1f3fb",
@@ -700,7 +700,7 @@
       "sha256": "a942bfb4c78880723334f94ca397d06640b1f9314af1436d9982ee205471d3f3",
       "byteSize": 274438,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.542Z"
+      "verifiedAt": "2026-11-14T09:38:32.942Z"
     },
     {
       "assetId": "stk_1f44e_1f3fb",
@@ -711,7 +711,7 @@
       "sha256": "da02278311ca970b6362d103b21233e97923af0dd64691b10e5806044750ea4a",
       "byteSize": 159952,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.542Z"
+      "verifiedAt": "2026-11-14T09:38:32.942Z"
     },
     {
       "assetId": "gif_1f44e_1f3fc",
@@ -722,7 +722,7 @@
       "sha256": "fb0e14fb600a5af96075a916697933b9bb90d1c829ff5133a0a363488ca7d6f7",
       "byteSize": 213645,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.546Z"
+      "verifiedAt": "2026-11-14T09:38:32.946Z"
     },
     {
       "assetId": "stk_1f44e_1f3fc",
@@ -733,7 +733,7 @@
       "sha256": "65bbe537f76b93362beb63223dd6695c59ecf26741f03141937430392b10ea38",
       "byteSize": 137604,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.546Z"
+      "verifiedAt": "2026-11-14T09:38:32.946Z"
     },
     {
       "assetId": "gif_1f44e_1f3fd",
@@ -744,7 +744,7 @@
       "sha256": "b548e73bd9522d9b34705c01adad9f91661e31626242da61694323e120ba67a1",
       "byteSize": 203553,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.552Z"
+      "verifiedAt": "2026-11-14T09:38:32.950Z"
     },
     {
       "assetId": "stk_1f44e_1f3fd",
@@ -755,7 +755,7 @@
       "sha256": "affd228bc71df105131a5e9c450aacf59c0a5ed96804ea73065607b3a78bfed5",
       "byteSize": 118620,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.552Z"
+      "verifiedAt": "2026-11-14T09:38:32.950Z"
     },
     {
       "assetId": "gif_1f44e_1f3fe",
@@ -766,7 +766,7 @@
       "sha256": "fea2635c1b8825931528fdb9bead0ad88744153b85a97361b92a680e479693ee",
       "byteSize": 192448,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.557Z"
+      "verifiedAt": "2026-11-14T09:38:32.954Z"
     },
     {
       "assetId": "stk_1f44e_1f3fe",
@@ -777,7 +777,7 @@
       "sha256": "426ce807b2561ff6fa01e9e84b5516545e76cc56858d385465a9276a20411788",
       "byteSize": 124812,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.557Z"
+      "verifiedAt": "2026-11-14T09:38:32.954Z"
     },
     {
       "assetId": "gif_1f44f_1f3fb",
@@ -788,7 +788,7 @@
       "sha256": "6847f810a460d6f2965710649e14b77b475fd39d950302d07c979201366cfefc",
       "byteSize": 249610,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.561Z"
+      "verifiedAt": "2026-11-14T09:38:32.958Z"
     },
     {
       "assetId": "stk_1f44f_1f3fb",
@@ -799,7 +799,7 @@
       "sha256": "1ce22fa808ae54f6f8bb7c82257fb9e4c7ee9093a161d6005ca218c8c31b6ffa",
       "byteSize": 152388,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.561Z"
+      "verifiedAt": "2026-11-14T09:38:32.958Z"
     },
     {
       "assetId": "gif_1f44f_1f3fc",
@@ -810,7 +810,7 @@
       "sha256": "7a4a6650d7fe83665ea022eee29b50603c055a155d0c08b5b740e1a98462569e",
       "byteSize": 197492,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.565Z"
+      "verifiedAt": "2026-11-14T09:38:32.962Z"
     },
     {
       "assetId": "stk_1f44f_1f3fc",
@@ -821,7 +821,7 @@
       "sha256": "473b73591ed5fad911f9bb91a9a033dab3bcd7ccb9bba437b85b971f76d0ba61",
       "byteSize": 133530,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.565Z"
+      "verifiedAt": "2026-11-14T09:38:32.962Z"
     },
     {
       "assetId": "gif_1f44f_1f3fd",
@@ -832,7 +832,7 @@
       "sha256": "a9584edbe8ed0d807f3e6d09283c42977284a7a54f8ffdc2768c2de3c68c3217",
       "byteSize": 197303,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.569Z"
+      "verifiedAt": "2026-11-14T09:38:32.966Z"
     },
     {
       "assetId": "stk_1f44f_1f3fd",
@@ -843,7 +843,7 @@
       "sha256": "40181767951234075aaafd2ef1bf7ab480c8d1c0f23121f0a1d55e4f2eb7608e",
       "byteSize": 118754,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.569Z"
+      "verifiedAt": "2026-11-14T09:38:32.966Z"
     },
     {
       "assetId": "gif_1f44f_1f3fe",
@@ -854,7 +854,7 @@
       "sha256": "24359668482c1c61d6448ca173972291d60f96ea1239c5c737bb9c99de4e13be",
       "byteSize": 182624,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.573Z"
+      "verifiedAt": "2026-11-14T09:38:32.970Z"
     },
     {
       "assetId": "stk_1f44f_1f3fe",
@@ -865,7 +865,7 @@
       "sha256": "7dca21c20d150fa737292fef2489555c529eaf969e677cb5ba102cbd9b392828",
       "byteSize": 126016,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.573Z"
+      "verifiedAt": "2026-11-14T09:38:32.970Z"
     },
     {
       "assetId": "gif_1f44f_1f3ff",
@@ -876,7 +876,7 @@
       "sha256": "cee7352831f4e15b0b453e1b63c8e99513ee5c4442cc364f13d6bc206cecc47f",
       "byteSize": 191629,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.576Z"
+      "verifiedAt": "2026-11-14T09:38:32.974Z"
     },
     {
       "assetId": "stk_1f44f_1f3ff",
@@ -887,7 +887,7 @@
       "sha256": "b2a51d90557fc7e20b9239b3f89e2c69ba605a29b72a18e674b1857e04bb5844",
       "byteSize": 112496,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.576Z"
+      "verifiedAt": "2026-11-14T09:38:32.974Z"
     },
     {
       "assetId": "gif_1f493",
@@ -898,7 +898,7 @@
       "sha256": "faf2eb8a1869012216f25d151526e602a6f63a30b04cafc96d03ac78133c7f77",
       "byteSize": 115896,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.580Z"
+      "verifiedAt": "2026-11-14T09:38:32.977Z"
     },
     {
       "assetId": "stk_1f493",
@@ -909,7 +909,7 @@
       "sha256": "6ae97a1f57a37c556b31bd5c23f3e9bfcf6e226d0053cf68ab0448bef5dbfb55",
       "byteSize": 103308,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.580Z"
+      "verifiedAt": "2026-11-14T09:38:32.977Z"
     },
     {
       "assetId": "gif_1f495",
@@ -920,7 +920,7 @@
       "sha256": "3aa5366e8d751f6dcb4be125c6515b5f78daf56275d7d7c9cc521ef59e06168b",
       "byteSize": 233765,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.585Z"
+      "verifiedAt": "2026-11-14T09:38:32.981Z"
     },
     {
       "assetId": "stk_1f495",
@@ -931,7 +931,7 @@
       "sha256": "4a6477e379d77a407443ce8a8ae75b3f304d6d7909533ce739c78ab63c4bd065",
       "byteSize": 190878,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.585Z"
+      "verifiedAt": "2026-11-14T09:38:32.981Z"
     },
     {
       "assetId": "gif_1f496",
@@ -942,7 +942,7 @@
       "sha256": "a78ff5904db90a77a98a6a319e8f6cfdf8c6593aa34c03479e038b466e9c204e",
       "byteSize": 249546,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.589Z"
+      "verifiedAt": "2026-11-14T09:38:32.986Z"
     },
     {
       "assetId": "stk_1f496",
@@ -953,7 +953,7 @@
       "sha256": "56a448bb667eab7573047a671f706782b757282e1b737b22abdb2c01fff3f36f",
       "byteSize": 213154,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.589Z"
+      "verifiedAt": "2026-11-14T09:38:32.986Z"
     },
     {
       "assetId": "gif_1f497",
@@ -964,7 +964,7 @@
       "sha256": "58f8060648de5fd2acbeaddf6d9bd48e0959c88852127702846c62d56995422c",
       "byteSize": 428285,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.593Z"
+      "verifiedAt": "2026-11-14T09:38:32.990Z"
     },
     {
       "assetId": "stk_1f497",
@@ -975,7 +975,7 @@
       "sha256": "9d4e4f2b995e234a2c9dddeba4ec58b2eb861ecaf3d5623801a401874208b579",
       "byteSize": 333428,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.593Z"
+      "verifiedAt": "2026-11-14T09:38:32.990Z"
     },
     {
       "assetId": "gif_1f499",
@@ -986,7 +986,7 @@
       "sha256": "cff89412378e8215e9eb7a6d78f42c4394746b5ba81179ef073afd217a3332aa",
       "byteSize": 265831,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.597Z"
+      "verifiedAt": "2026-11-14T09:38:32.995Z"
     },
     {
       "assetId": "stk_1f499",
@@ -997,7 +997,7 @@
       "sha256": "fc9a577a376109747cba403c78ff6a1b7f0b12e2df434def48169fda9c70b7eb",
       "byteSize": 300468,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.597Z"
+      "verifiedAt": "2026-11-14T09:38:32.995Z"
     },
     {
       "assetId": "gif_1f49a",
@@ -1008,7 +1008,7 @@
       "sha256": "0d938a3e77e7dd96dde593c1b26d16c1a5b9137ca7d7cb9c71671270ccdc856a",
       "byteSize": 295682,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.602Z"
+      "verifiedAt": "2026-11-14T09:38:33.000Z"
     },
     {
       "assetId": "stk_1f49a",
@@ -1019,7 +1019,7 @@
       "sha256": "c6b4a685b65cc84e28e4ff3596174b8289141a97109814ef66e6b8bac289d33f",
       "byteSize": 230238,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.602Z"
+      "verifiedAt": "2026-11-14T09:38:33.000Z"
     },
     {
       "assetId": "gif_1f49b",
@@ -1030,7 +1030,7 @@
       "sha256": "3e98b5d66d84da2926404cac558f323fd7107a98fcfde44b505f77cb12aaed5b",
       "byteSize": 276080,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.606Z"
+      "verifiedAt": "2026-11-14T09:38:33.004Z"
     },
     {
       "assetId": "stk_1f49b",
@@ -1041,7 +1041,7 @@
       "sha256": "b942ea25aadefa5c2f27a61bbc84626cebe20031314d8f6c530b4a256194d1cf",
       "byteSize": 295676,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.606Z"
+      "verifiedAt": "2026-11-14T09:38:33.004Z"
     },
     {
       "assetId": "gif_1f49c",
@@ -1052,7 +1052,7 @@
       "sha256": "1c9e2b7f56702845786c88a39ecda8b6ed66226e76bb8936c35df4f7fb7ffc1a",
       "byteSize": 270494,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.612Z"
+      "verifiedAt": "2026-11-14T09:38:33.009Z"
     },
     {
       "assetId": "stk_1f49c",
@@ -1063,7 +1063,7 @@
       "sha256": "577093f8438d3eb56b4849144cf77937f4f8da6c0d23154f4c3f9efc60c47c10",
       "byteSize": 265200,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.612Z"
+      "verifiedAt": "2026-11-14T09:38:33.009Z"
     },
     {
       "assetId": "gif_1f49e",
@@ -1074,7 +1074,7 @@
       "sha256": "067d55ca6421b18f3a64ffc5269ff1e7abb095844f082c3e618602e81acc99a6",
       "byteSize": 262164,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.617Z"
+      "verifiedAt": "2026-11-14T09:38:33.013Z"
     },
     {
       "assetId": "stk_1f49e",
@@ -1085,7 +1085,7 @@
       "sha256": "5a65e474eed2664eef89b9c515807a0d83886da1234ed3c263590e56660a9da4",
       "byteSize": 172764,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.617Z"
+      "verifiedAt": "2026-11-14T09:38:33.013Z"
     },
     {
       "assetId": "gif_1f49f",
@@ -1096,7 +1096,7 @@
       "sha256": "eb7deeba12e1317522b5b5aa6ddc9bacf3ac49d2de28fbc2e94ac129d997c2df",
       "byteSize": 236280,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.621Z"
+      "verifiedAt": "2026-11-14T09:38:33.017Z"
     },
     {
       "assetId": "stk_1f49f",
@@ -1107,7 +1107,7 @@
       "sha256": "a03aa34301f83ff65a5d552c402f890fbdf35530facaec21f703feb2a6f717f8",
       "byteSize": 95014,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.621Z"
+      "verifiedAt": "2026-11-14T09:38:33.017Z"
     },
     {
       "assetId": "gif_1f4aa_1f3fb",
@@ -1118,7 +1118,7 @@
       "sha256": "7975672d3c695f7add632546f08b28a2f1dcd273ff26ee3aeb18c5b64172be12",
       "byteSize": 419219,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.626Z"
+      "verifiedAt": "2026-11-14T09:38:33.021Z"
     },
     {
       "assetId": "stk_1f4aa_1f3fb",
@@ -1129,7 +1129,7 @@
       "sha256": "dbde9a1470d06bb2d51810ac03a996890b6a0cd3c264df6538b687d3123078bc",
       "byteSize": 284046,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.626Z"
+      "verifiedAt": "2026-11-14T09:38:33.021Z"
     },
     {
       "assetId": "gif_1f4aa_1f3fc",
@@ -1140,7 +1140,7 @@
       "sha256": "82ec2b03a10f613ba77c11210e5ef6538a95c61057b05acb180f8c56df764b7b",
       "byteSize": 316428,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.632Z"
+      "verifiedAt": "2026-11-14T09:38:33.026Z"
     },
     {
       "assetId": "stk_1f4aa_1f3fc",
@@ -1151,7 +1151,7 @@
       "sha256": "541611ca17a9689ca4e4a0a54a4031d41fe3c4602290f488cc1aae890255a62f",
       "byteSize": 247354,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.632Z"
+      "verifiedAt": "2026-11-14T09:38:33.026Z"
     },
     {
       "assetId": "gif_1f4aa_1f3fd",
@@ -1162,7 +1162,7 @@
       "sha256": "32497c76f48b0c70af91cd535680b68ff0809768a425b8040b8333dfe576869b",
       "byteSize": 326195,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.636Z"
+      "verifiedAt": "2026-11-14T09:38:33.031Z"
     },
     {
       "assetId": "stk_1f4aa_1f3fd",
@@ -1173,7 +1173,7 @@
       "sha256": "e789821e9ade286a335b038571d7edf2f0bcf2f93c26f65b1bf290350263fe97",
       "byteSize": 225992,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.636Z"
+      "verifiedAt": "2026-11-14T09:38:33.031Z"
     },
     {
       "assetId": "gif_1f4aa_1f3fe",
@@ -1184,7 +1184,7 @@
       "sha256": "00dba2728b6f8f365e855381eba00beee84ebbda1081d4169a6e48f563fbf92c",
       "byteSize": 286112,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.640Z"
+      "verifiedAt": "2026-11-14T09:38:33.035Z"
     },
     {
       "assetId": "stk_1f4aa_1f3fe",
@@ -1195,7 +1195,7 @@
       "sha256": "3b7d7ab1018b6e4eb1a6f657a604d05389bd66ce9357e5bc73d997ec4e83bcee",
       "byteSize": 229276,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.640Z"
+      "verifiedAt": "2026-11-14T09:38:33.035Z"
     },
     {
       "assetId": "gif_1f4aa_1f3ff",
@@ -1206,7 +1206,7 @@
       "sha256": "4adf762c181ea158a8d4a9b675c6000322510b32d98dd81d07f2464dbe5e261e",
       "byteSize": 308487,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.644Z"
+      "verifiedAt": "2026-11-14T09:38:33.039Z"
     },
     {
       "assetId": "stk_1f4aa_1f3ff",
@@ -1217,7 +1217,7 @@
       "sha256": "2dc398d77ac5feb96f80be1d6c2d2becabcff2b1efaddc0535843fca8d182622",
       "byteSize": 199654,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.644Z"
+      "verifiedAt": "2026-11-14T09:38:33.039Z"
     },
     {
       "assetId": "gif_1f5a4",
@@ -1228,7 +1228,7 @@
       "sha256": "325d381cd2362a555a9cad9568ba08c0325c7d2d2bc53e53b9882129a91fe1c0",
       "byteSize": 263985,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.649Z"
+      "verifiedAt": "2026-11-14T09:38:33.044Z"
     },
     {
       "assetId": "stk_1f5a4",
@@ -1239,7 +1239,7 @@
       "sha256": "f3eed3c52517df63d028d3a55862f3596c8ce95b145c4d97e93fd1a5a166c72e",
       "byteSize": 148536,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.649Z"
+      "verifiedAt": "2026-11-14T09:38:33.044Z"
     },
     {
       "assetId": "gif_1f603",
@@ -1250,7 +1250,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.653Z"
+      "verifiedAt": "2026-11-14T09:38:33.048Z"
     },
     {
       "assetId": "stk_1f603",
@@ -1261,7 +1261,7 @@
       "sha256": "a3c2eb229ef140b731b1bfabb5aa7c45656cfdff56a4ac0043c469a972ddfc1a",
       "byteSize": 361728,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.653Z"
+      "verifiedAt": "2026-11-14T09:38:33.048Z"
     },
     {
       "assetId": "gif_1f60d",
@@ -1272,7 +1272,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.658Z"
+      "verifiedAt": "2026-11-14T09:38:33.052Z"
     },
     {
       "assetId": "stk_1f60d",
@@ -1283,7 +1283,7 @@
       "sha256": "f9a12dd0779299de1c77d8c6168be39ad0f5c579b7ac46f9c77d60be042bc3de",
       "byteSize": 443836,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.658Z"
+      "verifiedAt": "2026-11-14T09:38:33.052Z"
     },
     {
       "assetId": "gif_1f618",
@@ -1294,7 +1294,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.662Z"
+      "verifiedAt": "2026-11-14T09:38:33.055Z"
     },
     {
       "assetId": "stk_1f618",
@@ -1305,7 +1305,7 @@
       "sha256": "acb27c59d0dc049d5b56dacee775e0a7b4049f226017e6ecd126cf3480199f3d",
       "byteSize": 424400,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.662Z"
+      "verifiedAt": "2026-11-14T09:38:33.055Z"
     },
     {
       "assetId": "gif_1f61a",
@@ -1316,7 +1316,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.666Z"
+      "verifiedAt": "2026-11-14T09:38:33.060Z"
     },
     {
       "assetId": "stk_1f61a",
@@ -1327,7 +1327,7 @@
       "sha256": "af000d0ae026ab0ed8e3085b4c5a6ed2fc060e1867f20317307becf54ff45e67",
       "byteSize": 369356,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.666Z"
+      "verifiedAt": "2026-11-14T09:38:33.060Z"
     },
     {
       "assetId": "gif_1f623",
@@ -1338,7 +1338,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.670Z"
+      "verifiedAt": "2026-11-14T09:38:33.063Z"
     },
     {
       "assetId": "stk_1f623",
@@ -1349,7 +1349,7 @@
       "sha256": "025654eddc87269e2bb1c3de11d4015ba76dfefda716092ac43e041fc3b06a8a",
       "byteSize": 370228,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.670Z"
+      "verifiedAt": "2026-11-14T09:38:33.063Z"
     },
     {
       "assetId": "gif_1f90d",
@@ -1360,7 +1360,7 @@
       "sha256": "2cfa4016b1252a1300785697f3f218ffab79bf4b8aa1e6784f90f97b9280cd6a",
       "byteSize": 252590,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.674Z"
+      "verifiedAt": "2026-11-14T09:38:33.067Z"
     },
     {
       "assetId": "stk_1f90d",
@@ -1371,7 +1371,7 @@
       "sha256": "327e1a7f9001ce6e206ce4ab61210097309ed42c163ee9f914220e5364172cbf",
       "byteSize": 150802,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.674Z"
+      "verifiedAt": "2026-11-14T09:38:33.067Z"
     },
     {
       "assetId": "gif_1f90e",
@@ -1382,7 +1382,7 @@
       "sha256": "6a3734bd9f7f5a0b27b478469a8553d8f63b5004435bc92482a6bdd4ee751bbb",
       "byteSize": 255503,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.679Z"
+      "verifiedAt": "2026-11-14T09:38:33.071Z"
     },
     {
       "assetId": "stk_1f90e",
@@ -1393,7 +1393,7 @@
       "sha256": "96f4042537decf56e13241651af2bb9c93a1c979dd021ab700db129747218d97",
       "byteSize": 226650,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.679Z"
+      "verifiedAt": "2026-11-14T09:38:33.071Z"
     },
     {
       "assetId": "gif_1f9e1",
@@ -1404,7 +1404,7 @@
       "sha256": "6b35b71987c1f8ec025e9ece4b4a01a27d04494e950cef8987e5fd5394ebd859",
       "byteSize": 240420,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.684Z"
+      "verifiedAt": "2026-11-14T09:38:33.076Z"
     },
     {
       "assetId": "stk_1f9e1",
@@ -1415,7 +1415,7 @@
       "sha256": "44971784ac6726e6e18870c403f4e33b80a9408b4918af50cd9f4539fc85635a",
       "byteSize": 294934,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.684Z"
+      "verifiedAt": "2026-11-14T09:38:33.076Z"
     },
     {
       "assetId": "gif_1fa75",
@@ -1426,7 +1426,7 @@
       "sha256": "4a30aa6e59eb0e911496bea68c502cd0fd471dc8b35af5c60d07acf38a1bad74",
       "byteSize": 249181,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.688Z"
+      "verifiedAt": "2026-11-14T09:38:33.080Z"
     },
     {
       "assetId": "stk_1fa75",
@@ -1437,7 +1437,7 @@
       "sha256": "b457e3396c10f68de3f514a988a84de9dfc83fcdf3c91f7351636ab039fc8b33",
       "byteSize": 295940,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.688Z"
+      "verifiedAt": "2026-11-14T09:38:33.080Z"
     },
     {
       "assetId": "gif_1fa76",
@@ -1448,7 +1448,7 @@
       "sha256": "d726c623b34236b5c1e52a3df65f29a5614a8376aebe23bb60f40898f5e87e97",
       "byteSize": 271689,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.692Z"
+      "verifiedAt": "2026-11-14T09:38:33.085Z"
     },
     {
       "assetId": "stk_1fa76",
@@ -1459,7 +1459,7 @@
       "sha256": "9eeb518414eeb20bad3d5d28453866aa4a21081141404698af8d55937250c22d",
       "byteSize": 160396,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.692Z"
+      "verifiedAt": "2026-11-14T09:38:33.085Z"
     },
     {
       "assetId": "gif_1fa77",
@@ -1470,7 +1470,7 @@
       "sha256": "89bed8e3216f445d9a9df2605bf8da4a920c456c212635cbfbe027f6381f301e",
       "byteSize": 277826,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.695Z"
+      "verifiedAt": "2026-11-14T09:38:33.089Z"
     },
     {
       "assetId": "stk_1fa77",
@@ -1481,7 +1481,7 @@
       "sha256": "4dbe2254277a95df79c3fd479a9df1d9240221b73a5d5aaa5e2837cf244a892a",
       "byteSize": 244854,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.695Z"
+      "verifiedAt": "2026-11-14T09:38:33.089Z"
     },
     {
       "assetId": "gif_1fac0",
@@ -1492,7 +1492,7 @@
       "sha256": "befd879f5a16e5b43f3a6a34ca25d7c6c717c6b76a039520500f25d61f87b52e",
       "byteSize": 396687,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.700Z"
+      "verifiedAt": "2026-11-14T09:38:33.094Z"
     },
     {
       "assetId": "stk_1fac0",
@@ -1503,7 +1503,7 @@
       "sha256": "5cc814c23b56d52c806d3856ec1345e29c80816c7bd2b56fe52072d21a402433",
       "byteSize": 260854,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.700Z"
+      "verifiedAt": "2026-11-14T09:38:33.094Z"
     },
     {
       "assetId": "gif_263a_fe0f",
@@ -1514,7 +1514,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.704Z"
+      "verifiedAt": "2026-11-14T09:38:33.098Z"
     },
     {
       "assetId": "stk_263a_fe0f",
@@ -1525,7 +1525,7 @@
       "sha256": "4e57580a8bac2b0c5763750ca34d9de8e464280f782ef614cb167c0c1d9fbdb3",
       "byteSize": 437996,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.704Z"
+      "verifiedAt": "2026-11-14T09:38:33.098Z"
     },
     {
       "assetId": "gif_2665_fe0f",
@@ -1536,7 +1536,7 @@
       "sha256": "d0d63c1ac172a65af89e5a67c295f143a3157b0613754e0119930bb0af7544a9",
       "byteSize": 251057,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.708Z"
+      "verifiedAt": "2026-11-14T09:38:33.102Z"
     },
     {
       "assetId": "stk_2665_fe0f",
@@ -1547,7 +1547,7 @@
       "sha256": "a7e51812c0a33f8d82551a7c6f622b988a78f3840eb5efeab924167407dd02cd",
       "byteSize": 283576,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.708Z"
+      "verifiedAt": "2026-11-14T09:38:33.102Z"
     },
     {
       "assetId": "gif_2763_fe0f",
@@ -1558,7 +1558,7 @@
       "sha256": "d4283cf8975e854db84b62129183e51cc42972b8974aacc949bd94de610db831",
       "byteSize": 179761,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.712Z"
+      "verifiedAt": "2026-11-14T09:38:33.106Z"
     },
     {
       "assetId": "stk_2763_fe0f",
@@ -1569,7 +1569,7 @@
       "sha256": "e8c7b92cfc2cd390505ad7fc0f44eb4d3b2414736790c5ddfd60e6e5a17e3d86",
       "byteSize": 202880,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.712Z"
+      "verifiedAt": "2026-11-14T09:38:33.106Z"
     },
     {
       "assetId": "gif_2764_fe0f",
@@ -1580,7 +1580,7 @@
       "sha256": "8558abf3f723b996ade7518dd405cf564e9cd17000161717cfa143c42d94323c",
       "byteSize": 248803,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.716Z"
+      "verifiedAt": "2026-11-14T09:38:33.111Z"
     },
     {
       "assetId": "stk_2764_fe0f",
@@ -1591,7 +1591,7 @@
       "sha256": "8f02722ca349a1b1a0c7a02d7ec3c716e09eccdbf696adf89c67afe2bb175b56",
       "byteSize": 294160,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.716Z"
+      "verifiedAt": "2026-11-14T09:38:33.111Z"
     },
     {
       "assetId": "gif_2764_fe0f_200d_1f525",
@@ -1602,7 +1602,7 @@
       "sha256": "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
       "byteSize": 42,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.720Z"
+      "verifiedAt": "2026-11-14T09:38:33.114Z"
     },
     {
       "assetId": "stk_2764_fe0f_200d_1f525",
@@ -1613,7 +1613,7 @@
       "sha256": "b92398b04b8466ce74f76fc1edd5c84baa55afcc1d79417a14679e70652b1f2b",
       "byteSize": 251108,
       "mmsCompliant": true,
-      "verifiedAt": "2026-11-14T09:30:07.720Z"
+      "verifiedAt": "2026-11-14T09:38:33.114Z"
     }
   ]
 }

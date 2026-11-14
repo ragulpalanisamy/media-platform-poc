@@ -7,10 +7,20 @@ const MAX_MMS_BYTES = 450 * 1024; // 460,800 bytes
 
 console.log('🔍 Starting VBC In-House Media Platform Architecture & Compliance Audit...');
 
-// 1. Verify dist folder exists
-if (!fs.existsSync(DIST_DIR)) {
-  console.error('❌ Build directory dist/ does not exist. Run "vite build" first.');
-  process.exit(1);
+// 1. Verify dist folder exists (or auto-build if missing)
+if (!fs.existsSync(DIST_DIR) || !fs.existsSync(path.join(DIST_DIR, 'index.html'))) {
+  console.log('📦 Build directory dist/ missing or incomplete. Automatically building with Vite...');
+  try {
+    const { execSync } = await import('node:child_process');
+    if (!fs.existsSync('./public/cdn/v1/catalog.json')) {
+      console.log('⚙️ Building catalog first...');
+      execSync('node scripts/build-catalog.mjs', { stdio: 'inherit' });
+    }
+    execSync('npx vite build', { stdio: 'inherit' });
+  } catch (err) {
+    console.error('❌ Failed to run build automatically. Run "npm run build" first.');
+    process.exit(1);
+  }
 }
 
 // 2. Verify mandatory entry points & legal audit files
