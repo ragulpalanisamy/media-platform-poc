@@ -1,0 +1,1404 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-11-14T07:45:50.072Z",
+  "maxMmsBytes": 460800,
+  "count": 60,
+  "items": [
+    {
+      "id": "noto_1f600",
+      "title": "Smile",
+      "type": "sticker",
+      "tags": [
+        "smile",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f600.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f600.webp",
+      "byteSize": 369214,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/webp",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "99ae57c7ca271adaa211f2c3e599e996dcc2d962564e49bcd979671e5c73146f"
+    },
+    {
+      "id": "noto_1f603",
+      "title": "Smile-with-big-eyes",
+      "type": "sticker",
+      "tags": [
+        "smile-with-big-eyes",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f603.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f603.webp",
+      "byteSize": 361728,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/webp",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "a3c2eb229ef140b731b1bfabb5aa7c45656cfdff56a4ac0043c469a972ddfc1a"
+    },
+    {
+      "id": "noto_1f61a",
+      "title": "Kissing-closed-eyes",
+      "type": "sticker",
+      "tags": [
+        "kissing-closed-eyes",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f61a.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f61a.webp",
+      "byteSize": 369356,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/webp",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "af000d0ae026ab0ed8e3085b4c5a6ed2fc060e1867f20317307becf54ff45e67"
+    },
+    {
+      "id": "noto_1f618",
+      "title": "Kissing-heart",
+      "type": "sticker",
+      "tags": [
+        "kissing-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f618.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f618.webp",
+      "byteSize": 424400,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/webp",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "acb27c59d0dc049d5b56dacee775e0a7b4049f226017e6ecd126cf3480199f3d"
+    },
+    {
+      "id": "noto_1f60d",
+      "title": "Heart-eyes",
+      "type": "sticker",
+      "tags": [
+        "heart-eyes",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f60d.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f60d.webp",
+      "byteSize": 443836,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/webp",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "f9a12dd0779299de1c77d8c6168be39ad0f5c579b7ac46f9c77d60be042bc3de"
+    },
+    {
+      "id": "noto_263a_fe0f",
+      "title": "Warm-smile",
+      "type": "sticker",
+      "tags": [
+        "warm-smile",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_263a_fe0f.webp",
+      "fullUrl": "/cdn/v1/assets/noto_263a_fe0f.webp",
+      "byteSize": 437996,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/webp",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "4e57580a8bac2b0c5763750ca34d9de8e464280f782ef614cb167c0c1d9fbdb3"
+    },
+    {
+      "id": "noto_1fae1",
+      "title": "Salute",
+      "type": "sticker",
+      "tags": [
+        "salute",
+        "workplace"
+      ],
+      "categories": [
+        "Workplace"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1fae1.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1fae1.webp",
+      "byteSize": 383548,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/webp",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "2e412f3ed5161935042c979329a55d5c3348dcce497e27b05a590b0c29f8e99d"
+    },
+    {
+      "id": "noto_1f623",
+      "title": "Scrunched-eyes",
+      "type": "sticker",
+      "tags": [
+        "scrunched-eyes",
+        "persevering",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f623.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f623.webp",
+      "byteSize": 370228,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/webp",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "025654eddc87269e2bb1c3de11d4015ba76dfefda716092ac43e041fc3b06a8a"
+    },
+    {
+      "id": "noto_2b50",
+      "title": "Star",
+      "type": "gif",
+      "tags": [
+        "star",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_2b50.webp",
+      "fullUrl": "/cdn/v1/assets/noto_2b50.gif",
+      "byteSize": 276736,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "96c83285a1b4f1bdc1b61cab8f1a26b33fe820392d32f4dfce76f06923a012b5"
+    },
+    {
+      "id": "noto_1f31f",
+      "title": "Glowing-star",
+      "type": "gif",
+      "tags": [
+        "glowing-star",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f31f.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f31f.gif",
+      "byteSize": 148541,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "afad2fcfbaee6af6749cb8bf9b63bb4408e69ae45f29305aa596a3f7fd855faa"
+    },
+    {
+      "id": "noto_2728",
+      "title": "Sparkles",
+      "type": "gif",
+      "tags": [
+        "sparkles",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_2728.webp",
+      "fullUrl": "/cdn/v1/assets/noto_2728.gif",
+      "byteSize": 158633,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "e598e4b90f9f6206ab6316defd43ef3305c14ebbb03840b09dca8f8685888261"
+    },
+    {
+      "id": "noto_1f525",
+      "title": "Fire",
+      "type": "sticker",
+      "tags": [
+        "fire",
+        "burn",
+        "lit",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f525.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f525.webp",
+      "byteSize": 189752,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/webp",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "8c18972a71041700a1da4d9a1586640fb6d55eff4dc64efd29efde6a384a2ff5"
+    },
+    {
+      "id": "noto_1f4af",
+      "title": "100",
+      "type": "gif",
+      "tags": [
+        "100",
+        "one-hundred",
+        "hundred",
+        "points",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f4af.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f4af.gif",
+      "byteSize": 168659,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "35f5b266c961602799985a5bd71e282738efe2d80ee1a0db13e9c12fead01581"
+    },
+    {
+      "id": "noto_1f389",
+      "title": "Party-popper",
+      "type": "gif",
+      "tags": [
+        "party-popper",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f389.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f389.gif",
+      "byteSize": 395755,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "86879c45175f3901a8676d9b0bb5132c7a98b20a9f40487c21e4c896ce196616"
+    },
+    {
+      "id": "noto_2764_fe0f",
+      "title": "Red-heart",
+      "type": "gif",
+      "tags": [
+        "red-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_2764_fe0f.webp",
+      "fullUrl": "/cdn/v1/assets/noto_2764_fe0f.gif",
+      "byteSize": 248803,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "8558abf3f723b996ade7518dd405cf564e9cd17000161717cfa143c42d94323c"
+    },
+    {
+      "id": "noto_1f9e1",
+      "title": "Orange-heart",
+      "type": "gif",
+      "tags": [
+        "orange-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f9e1.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f9e1.gif",
+      "byteSize": 240420,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "6b35b71987c1f8ec025e9ece4b4a01a27d04494e950cef8987e5fd5394ebd859"
+    },
+    {
+      "id": "noto_1f49b",
+      "title": "Yellow-heart",
+      "type": "gif",
+      "tags": [
+        "yellow-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f49b.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f49b.gif",
+      "byteSize": 276080,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "3e98b5d66d84da2926404cac558f323fd7107a98fcfde44b505f77cb12aaed5b"
+    },
+    {
+      "id": "noto_1f49a",
+      "title": "Green-heart",
+      "type": "gif",
+      "tags": [
+        "green-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f49a.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f49a.gif",
+      "byteSize": 295682,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "0d938a3e77e7dd96dde593c1b26d16c1a5b9137ca7d7cb9c71671270ccdc856a"
+    },
+    {
+      "id": "noto_1fa75",
+      "title": "Light-blue-heart",
+      "type": "gif",
+      "tags": [
+        "light-blue-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1fa75.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1fa75.gif",
+      "byteSize": 249181,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "4a30aa6e59eb0e911496bea68c502cd0fd471dc8b35af5c60d07acf38a1bad74"
+    },
+    {
+      "id": "noto_1f499",
+      "title": "Blue-heart",
+      "type": "gif",
+      "tags": [
+        "blue-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f499.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f499.gif",
+      "byteSize": 265831,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "cff89412378e8215e9eb7a6d78f42c4394746b5ba81179ef073afd217a3332aa"
+    },
+    {
+      "id": "noto_1f49c",
+      "title": "Purple-heart",
+      "type": "gif",
+      "tags": [
+        "purple-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f49c.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f49c.gif",
+      "byteSize": 270494,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "1c9e2b7f56702845786c88a39ecda8b6ed66226e76bb8936c35df4f7fb7ffc1a"
+    },
+    {
+      "id": "noto_1f90e",
+      "title": "Brown-heart",
+      "type": "gif",
+      "tags": [
+        "brown-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f90e.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f90e.gif",
+      "byteSize": 255503,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "6a3734bd9f7f5a0b27b478469a8553d8f63b5004435bc92482a6bdd4ee751bbb"
+    },
+    {
+      "id": "noto_1f5a4",
+      "title": "Black-heart",
+      "type": "gif",
+      "tags": [
+        "black-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f5a4.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f5a4.gif",
+      "byteSize": 263985,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "325d381cd2362a555a9cad9568ba08c0325c7d2d2bc53e53b9882129a91fe1c0"
+    },
+    {
+      "id": "noto_1fa76",
+      "title": "Grey-heart",
+      "type": "gif",
+      "tags": [
+        "grey-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1fa76.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1fa76.gif",
+      "byteSize": 271689,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "d726c623b34236b5c1e52a3df65f29a5614a8376aebe23bb60f40898f5e87e97"
+    },
+    {
+      "id": "noto_1f90d",
+      "title": "White-heart",
+      "type": "gif",
+      "tags": [
+        "white-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f90d.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f90d.gif",
+      "byteSize": 252590,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "2cfa4016b1252a1300785697f3f218ffab79bf4b8aa1e6784f90f97b9280cd6a"
+    },
+    {
+      "id": "noto_1fa77",
+      "title": "Pink-heart",
+      "type": "gif",
+      "tags": [
+        "pink-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1fa77.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1fa77.gif",
+      "byteSize": 277826,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "89bed8e3216f445d9a9df2605bf8da4a920c456c212635cbfbe027f6381f301e"
+    },
+    {
+      "id": "noto_1f496",
+      "title": "Sparkling-heart",
+      "type": "gif",
+      "tags": [
+        "sparkling-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f496.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f496.gif",
+      "byteSize": 249546,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "a78ff5904db90a77a98a6a319e8f6cfdf8c6593aa34c03479e038b466e9c204e"
+    },
+    {
+      "id": "noto_1f497",
+      "title": "Heart-grow",
+      "type": "gif",
+      "tags": [
+        "heart-grow",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f497.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f497.gif",
+      "byteSize": 428285,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "58f8060648de5fd2acbeaddf6d9bd48e0959c88852127702846c62d56995422c"
+    },
+    {
+      "id": "noto_1f493",
+      "title": "Beating-heart",
+      "type": "gif",
+      "tags": [
+        "beating-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f493.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f493.gif",
+      "byteSize": 115896,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "faf2eb8a1869012216f25d151526e602a6f63a30b04cafc96d03ac78133c7f77"
+    },
+    {
+      "id": "noto_1f49e",
+      "title": "Revolving-hearts",
+      "type": "gif",
+      "tags": [
+        "revolving-hearts",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f49e.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f49e.gif",
+      "byteSize": 262164,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "067d55ca6421b18f3a64ffc5269ff1e7abb095844f082c3e618602e81acc99a6"
+    },
+    {
+      "id": "noto_1f495",
+      "title": "Two-hearts",
+      "type": "gif",
+      "tags": [
+        "two-hearts",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f495.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f495.gif",
+      "byteSize": 233765,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "3aa5366e8d751f6dcb4be125c6515b5f78daf56275d7d7c9cc521ef59e06168b"
+    },
+    {
+      "id": "noto_1f49f",
+      "title": "Heart-box",
+      "type": "gif",
+      "tags": [
+        "heart-box",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f49f.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f49f.gif",
+      "byteSize": 236280,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "eb7deeba12e1317522b5b5aa6ddc9bacf3ac49d2de28fbc2e94ac129d997c2df"
+    },
+    {
+      "id": "noto_2665_fe0f",
+      "title": "Heart",
+      "type": "gif",
+      "tags": [
+        "heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_2665_fe0f.webp",
+      "fullUrl": "/cdn/v1/assets/noto_2665_fe0f.gif",
+      "byteSize": 251057,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "d0d63c1ac172a65af89e5a67c295f143a3157b0613754e0119930bb0af7544a9"
+    },
+    {
+      "id": "noto_2763_fe0f",
+      "title": "Heart-exclamation-point",
+      "type": "gif",
+      "tags": [
+        "heart-exclamation-point",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_2763_fe0f.webp",
+      "fullUrl": "/cdn/v1/assets/noto_2763_fe0f.gif",
+      "byteSize": 179761,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "d4283cf8975e854db84b62129183e51cc42972b8974aacc949bd94de610db831"
+    },
+    {
+      "id": "noto_2764_fe0f_200d_1f525",
+      "title": "Fire-heart",
+      "type": "sticker",
+      "tags": [
+        "fire-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_2764_fe0f_200d_1f525.webp",
+      "fullUrl": "/cdn/v1/assets/noto_2764_fe0f_200d_1f525.webp",
+      "byteSize": 251108,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/webp",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "b92398b04b8466ce74f76fc1edd5c84baa55afcc1d79417a14679e70652b1f2b"
+    },
+    {
+      "id": "noto_1fac0",
+      "title": "Anatomical-heart",
+      "type": "gif",
+      "tags": [
+        "anatomical-heart",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1fac0.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1fac0.gif",
+      "byteSize": 396687,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "befd879f5a16e5b43f3a6a34ca25d7c6c717c6b76a039520500f25d61f87b52e"
+    },
+    {
+      "id": "noto_1f440",
+      "title": "Eyes",
+      "type": "gif",
+      "tags": [
+        "eyes",
+        "workplace",
+        "reactions"
+      ],
+      "categories": [
+        "Workplace",
+        "Reactions"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f440.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f440.gif",
+      "byteSize": 309202,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "cd74f25ba724237765bc5d481a4a1c20299a4cd85ee8949b78123a0cb729a1b0"
+    },
+    {
+      "id": "noto_1f4aa",
+      "title": "Muscle",
+      "type": "gif",
+      "tags": [
+        "muscle",
+        "flex",
+        "bicep",
+        "strong",
+        "workplace"
+      ],
+      "categories": [
+        "Workplace"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f4aa.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f4aa.gif",
+      "byteSize": 306413,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "e3b3eed21515c83a387c227371c3566456f43c597c27bb8ed7096db15098de5b"
+    },
+    {
+      "id": "noto_1f4aa_1f3fb",
+      "title": "Muscle",
+      "type": "gif",
+      "tags": [
+        "muscle",
+        "flex",
+        "bicep",
+        "strong",
+        "workplace"
+      ],
+      "categories": [
+        "Workplace"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f4aa_1f3fb.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f4aa_1f3fb.gif",
+      "byteSize": 419219,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "7975672d3c695f7add632546f08b28a2f1dcd273ff26ee3aeb18c5b64172be12"
+    },
+    {
+      "id": "noto_1f4aa_1f3fc",
+      "title": "Muscle",
+      "type": "gif",
+      "tags": [
+        "muscle",
+        "flex",
+        "bicep",
+        "strong",
+        "workplace"
+      ],
+      "categories": [
+        "Workplace"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f4aa_1f3fc.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f4aa_1f3fc.gif",
+      "byteSize": 316428,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "82ec2b03a10f613ba77c11210e5ef6538a95c61057b05acb180f8c56df764b7b"
+    },
+    {
+      "id": "noto_1f4aa_1f3fd",
+      "title": "Muscle",
+      "type": "gif",
+      "tags": [
+        "muscle",
+        "flex",
+        "bicep",
+        "strong",
+        "workplace"
+      ],
+      "categories": [
+        "Workplace"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f4aa_1f3fd.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f4aa_1f3fd.gif",
+      "byteSize": 326195,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "32497c76f48b0c70af91cd535680b68ff0809768a425b8040b8333dfe576869b"
+    },
+    {
+      "id": "noto_1f4aa_1f3fe",
+      "title": "Muscle",
+      "type": "gif",
+      "tags": [
+        "muscle",
+        "flex",
+        "bicep",
+        "strong",
+        "workplace"
+      ],
+      "categories": [
+        "Workplace"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f4aa_1f3fe.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f4aa_1f3fe.gif",
+      "byteSize": 286112,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "00dba2728b6f8f365e855381eba00beee84ebbda1081d4169a6e48f563fbf92c"
+    },
+    {
+      "id": "noto_1f4aa_1f3ff",
+      "title": "Muscle",
+      "type": "gif",
+      "tags": [
+        "muscle",
+        "flex",
+        "bicep",
+        "strong",
+        "workplace"
+      ],
+      "categories": [
+        "Workplace"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f4aa_1f3ff.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f4aa_1f3ff.gif",
+      "byteSize": 308487,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "4adf762c181ea158a8d4a9b675c6000322510b32d98dd81d07f2464dbe5e261e"
+    },
+    {
+      "id": "noto_1f44f",
+      "title": "Clap",
+      "type": "gif",
+      "tags": [
+        "clap",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44f.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44f.gif",
+      "byteSize": 194400,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "36a2cd7143f1028f746c470889a1ba6d8b71f073b97f5dbdd1130ee2b000b867"
+    },
+    {
+      "id": "noto_1f44f_1f3fb",
+      "title": "Clap",
+      "type": "gif",
+      "tags": [
+        "clap",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44f_1f3fb.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44f_1f3fb.gif",
+      "byteSize": 249610,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "6847f810a460d6f2965710649e14b77b475fd39d950302d07c979201366cfefc"
+    },
+    {
+      "id": "noto_1f44f_1f3fc",
+      "title": "Clap",
+      "type": "gif",
+      "tags": [
+        "clap",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44f_1f3fc.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44f_1f3fc.gif",
+      "byteSize": 197492,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "7a4a6650d7fe83665ea022eee29b50603c055a155d0c08b5b740e1a98462569e"
+    },
+    {
+      "id": "noto_1f44f_1f3fd",
+      "title": "Clap",
+      "type": "gif",
+      "tags": [
+        "clap",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44f_1f3fd.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44f_1f3fd.gif",
+      "byteSize": 197303,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "a9584edbe8ed0d807f3e6d09283c42977284a7a54f8ffdc2768c2de3c68c3217"
+    },
+    {
+      "id": "noto_1f44f_1f3fe",
+      "title": "Clap",
+      "type": "gif",
+      "tags": [
+        "clap",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44f_1f3fe.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44f_1f3fe.gif",
+      "byteSize": 182624,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "24359668482c1c61d6448ca173972291d60f96ea1239c5c737bb9c99de4e13be"
+    },
+    {
+      "id": "noto_1f44f_1f3ff",
+      "title": "Clap",
+      "type": "gif",
+      "tags": [
+        "clap",
+        "workplace",
+        "celebration"
+      ],
+      "categories": [
+        "Workplace",
+        "Celebration"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44f_1f3ff.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44f_1f3ff.gif",
+      "byteSize": 191629,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "cee7352831f4e15b0b453e1b63c8e99513ee5c4442cc364f13d6bc206cecc47f"
+    },
+    {
+      "id": "noto_1f44d",
+      "title": "Thumbs-up",
+      "type": "gif",
+      "tags": [
+        "thumbs-up",
+        "+1",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44d.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44d.gif",
+      "byteSize": 194821,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "6f9e0ded0161c86e3d7ab1f42c8d0ad4c609bbce86d0c04092127f94b373134b"
+    },
+    {
+      "id": "noto_1f44d_1f3fb",
+      "title": "Thumbs-up",
+      "type": "gif",
+      "tags": [
+        "thumbs-up",
+        "+1",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44d_1f3fb.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44d_1f3fb.gif",
+      "byteSize": 262493,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "0205f93f58998c209984fa81f5278cfce940272648a661df7cdf5c051589f903"
+    },
+    {
+      "id": "noto_1f44d_1f3fc",
+      "title": "Thumbs-up",
+      "type": "gif",
+      "tags": [
+        "thumbs-up",
+        "+1",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44d_1f3fc.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44d_1f3fc.gif",
+      "byteSize": 202909,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "ccc7eff7946a8e00c489b71545f727316fdb8d80fedf888ea12166df7d83c76c"
+    },
+    {
+      "id": "noto_1f44d_1f3fd",
+      "title": "Thumbs-up",
+      "type": "gif",
+      "tags": [
+        "thumbs-up",
+        "+1",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44d_1f3fd.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44d_1f3fd.gif",
+      "byteSize": 192598,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "a1e9fdee1105686638a68b1739373c9745b7c7fdf806e96855c266e5be4b3efa"
+    },
+    {
+      "id": "noto_1f44d_1f3fe",
+      "title": "Thumbs-up",
+      "type": "gif",
+      "tags": [
+        "thumbs-up",
+        "+1",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44d_1f3fe.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44d_1f3fe.gif",
+      "byteSize": 181475,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "cc35b853e3b1df445b64a1937a8a315e8158c8b2d03c454d6b5520165dec1f40"
+    },
+    {
+      "id": "noto_1f44d_1f3ff",
+      "title": "Thumbs-up",
+      "type": "gif",
+      "tags": [
+        "thumbs-up",
+        "+1",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44d_1f3ff.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44d_1f3ff.gif",
+      "byteSize": 193097,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "cfc305b50dccde0d101ec70313991434ef4d93ee81913160496d8b5d200ae235"
+    },
+    {
+      "id": "noto_1f44e",
+      "title": "Thumbs-down",
+      "type": "gif",
+      "tags": [
+        "thumbs-down",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44e.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44e.gif",
+      "byteSize": 203397,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "9700a6f5a4ef2ea4b966cc13be1b1d75e888e732c8bfeec5e269889f2f0774c8"
+    },
+    {
+      "id": "noto_1f44e_1f3fb",
+      "title": "Thumbs-down",
+      "type": "gif",
+      "tags": [
+        "thumbs-down",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44e_1f3fb.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44e_1f3fb.gif",
+      "byteSize": 274438,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "a942bfb4c78880723334f94ca397d06640b1f9314af1436d9982ee205471d3f3"
+    },
+    {
+      "id": "noto_1f44e_1f3fc",
+      "title": "Thumbs-down",
+      "type": "gif",
+      "tags": [
+        "thumbs-down",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44e_1f3fc.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44e_1f3fc.gif",
+      "byteSize": 213645,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "fb0e14fb600a5af96075a916697933b9bb90d1c829ff5133a0a363488ca7d6f7"
+    },
+    {
+      "id": "noto_1f44e_1f3fd",
+      "title": "Thumbs-down",
+      "type": "gif",
+      "tags": [
+        "thumbs-down",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44e_1f3fd.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44e_1f3fd.gif",
+      "byteSize": 203553,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "b548e73bd9522d9b34705c01adad9f91661e31626242da61694323e120ba67a1"
+    },
+    {
+      "id": "noto_1f44e_1f3fe",
+      "title": "Thumbs-down",
+      "type": "gif",
+      "tags": [
+        "thumbs-down",
+        "workplace",
+        "approval"
+      ],
+      "categories": [
+        "Workplace",
+        "Approval"
+      ],
+      "thumbUrl": "/cdn/v1/assets/noto_1f44e_1f3fe.webp",
+      "fullUrl": "/cdn/v1/assets/noto_1f44e_1f3fe.gif",
+      "byteSize": 192448,
+      "width": 512,
+      "height": 512,
+      "mimeType": "image/gif",
+      "mmsCompliant": true,
+      "license": "CC-BY-4.0",
+      "sha256": "fea2635c1b8825931528fdb9bead0ad88744153b85a97361b92a680e479693ee"
+    }
+  ]
+}
