@@ -106,11 +106,12 @@ import VbcChatSimulator from './demo/VbcChatSimulator.vue';
 import ArchitectInspector from './demo/ArchitectInspector.vue';
 
 const inspectedAsset = ref<MediaAsset | null>({
-  id: 'noto_1f680',
+  id: 'gif_1f680',
   title: 'Rocket Launch',
   type: 'gif',
   tags: ['rocket', 'launch', 'deploy', 'ship', 'fast'],
-  categories: ['Workplace', 'Celebration'],
+  categories: ['Workplace', 'Celebration', 'Launch & Hype'],
+  searchText: 'rocket launch deploy ship fast workplace celebration launch & hype gif',
   thumbUrl: '/cdn/v1/assets/noto_1f680.webp',
   fullUrl: '/cdn/v1/assets/noto_1f680.gif',
   byteSize: 68420,

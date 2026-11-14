@@ -1,7 +1,7 @@
-# SKILLS.md — VBC Media Platform Engineering Playbook
+# SKILLS.md — Media Platform Engineering Playbook
 
 > **Canonical Location:** The standardized Claude Code skill with YAML frontmatter is maintained in:
-> 🔗 [`.claude/skills/vbc-media-platform/SKILL.md`](./.claude/skills/vbc-media-platform/SKILL.md)
+> 🔗 [`.claude/skills/media-platform/SKILL.md`](./.claude/skills/media-platform/SKILL.md)
 
 Refer to that file for the complete specifications of:
 - **Skill 1:** Deterministic Catalog & Cryptographic SBOM Ingestion (`scripts/build-catalog.mjs`)

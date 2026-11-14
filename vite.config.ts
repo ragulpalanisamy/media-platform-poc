@@ -6,6 +6,7 @@ import path from 'node:path';
 export default defineConfig({
   plugins: [vue()],
   resolve: {
+    preserveSymlinks: true,
     alias: {
       '@': path.resolve(__dirname, './src'),
       '@packages': path.resolve(__dirname, './packages')
