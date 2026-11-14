@@ -285,7 +285,7 @@ export class VbcMediaCore {
    * Fast typo tolerance helper: checks if s1 and s2 are at most 1 single-character edit apart
    * (1 insertion, 1 deletion, or 1 substitution).
    */
-  private isOneEditAway(s1: string, s2: string): boolean {
+  public isOneEditAway(s1: string, s2: string): boolean {
     const len1 = s1.length;
     const len2 = s2.length;
     if (Math.abs(len1 - len2) > 1) return false;
