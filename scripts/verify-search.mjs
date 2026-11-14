@@ -36,7 +36,27 @@ for (const item of catalog.items) {
 console.log('✅ All catalog items pass <= 460,800 bytes MMS ceiling.');
 
 // 2. Load VbcMediaCore and execute test queries
-const { VbcMediaCore } = await import('../src/sdk/vbc-media-core.ts');
+async function loadVbcMediaCore() {
+  try {
+    return await import('../src/sdk/vbc-media-core.ts');
+  } catch (err) {
+    if (err.code === 'ERR_UNKNOWN_FILE_EXTENSION' || err.message?.includes('Unknown file extension')) {
+      const ts = (await import('typescript')).default;
+      const tsSource = fs.readFileSync(path.resolve('src/sdk/vbc-media-core.ts'), 'utf8');
+      const transpiled = ts.transpileModule(tsSource, {
+        compilerOptions: {
+          module: ts.ModuleKind.ESNext,
+          target: ts.ScriptTarget.ES2022
+        }
+      });
+      const dataUri = `data:text/javascript;base64,${Buffer.from(transpiled.outputText).toString('base64')}`;
+      return await import(dataUri);
+    }
+    throw err;
+  }
+}
+
+const { VbcMediaCore } = await loadVbcMediaCore();
 const core = new VbcMediaCore();
 await core.init();
 
