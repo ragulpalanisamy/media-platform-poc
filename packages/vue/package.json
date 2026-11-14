@@ -1,0 +1,15 @@
+{
+  "name": "@vonage/vbc-media-picker",
+  "version": "1.0.0",
+  "description": "Drop-in Vue media picker component for Vonage Business Communications (VBC)",
+  "main": "dist/vbc-media-picker.umd.cjs",
+  "module": "dist/vbc-media-picker.js",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "vue": "^2.7.0 || ^3.0.0"
+  },
+  "dependencies": {
+    "@vonage/vbc-media-core": "^1.0.0"
+  },
+  "license": "Apache-2.0"
+}

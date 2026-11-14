@@ -1,0 +1,9 @@
+{
+  "name": "@vonage/vbc-media-core",
+  "version": "1.0.0",
+  "description": "Headless, zero-dependency, in-memory media search & catalog engine for VBC clients",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "Apache-2.0",
+  "keywords": ["vonage", "vbc", "media", "search", "headless", "in-memory"]
+}

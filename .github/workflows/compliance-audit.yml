@@ -1,0 +1,36 @@
+name: VBC Media Platform Compliance & Audit CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  compliance-audit:
+    name: Enforce MMS <450KB Cap & Zero Third-Party Endpoints
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Catalog Ingestion & Sanitization
+        run: npm run build:catalog
+
+      - name: Verify MMS Cap, Zero-Leakage & Cryptographic SBOM
+        run: node scripts/verify-build.mjs
+
+      - name: Typecheck TypeScript SDKs
+        run: npm run typecheck
+
+      - name: Build Production Bundle
+        run: npm run build

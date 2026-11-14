@@ -1,0 +1,28 @@
+name: Automated OTA Catalog Ingestion & SBOM Refresh
+
+on:
+  schedule:
+    - cron: '0 4 * * 1' # Run every Monday at 04:00 UTC
+  workflow_dispatch:
+
+jobs:
+  ingest-and-sbom:
+    name: Refresh Open-Source Catalog & Validate SPDX Licenses
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Ingest latest assets & generate cryptographic SBOM
+        run: npm run build:catalog
+
+      - name: Validate zero assets exceed 450 KB
+        run: node scripts/verify-build.mjs
