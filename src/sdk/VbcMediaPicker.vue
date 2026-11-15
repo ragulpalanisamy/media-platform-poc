@@ -1,7 +1,7 @@
 <template>
   <div
     class="flex flex-col w-full max-w-110 h-135 rounded-2xl overflow-hidden font-sans select-none shadow-2xl backdrop-blur-xl"
-    :class="theme === 'light' ? 'bg-white/95 text-slate-900 border border-slate-200' : 'bg-[#0f121c]/95 text-slate-100 border border-white/10'"
+    :class="theme === 'light' ? 'bg-white/95 text-slate-900 border border-slate-200' : 'bg-slate-950/95 text-slate-100 border border-slate-800'"
     @click.stop
   >
     <!-- Picker Header -->
@@ -94,7 +94,7 @@
       <!-- Loading Skeleton (Initial Load) -->
       <template v-if="!isReady">
         <div v-for="n in 9" :key="'skel-'+n" class="aspect-square rounded-xl overflow-hidden bg-white/5 relative">
-          <div class="w-full h-full animate-shimmer bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+          <div class="w-full h-full animate-shimmer bg-linear-to-r from-transparent via-white/10 to-transparent"></div>
         </div>
       </template>
 

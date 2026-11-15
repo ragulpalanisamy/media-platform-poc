@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col h-full bg-[#0d121c] rounded-2xl border border-[#1e2638] overflow-hidden shadow-2xl">
+  <div class="flex flex-col h-full bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
     <!-- Inspector Header Tabs -->
-    <div class="pt-3 px-4.5 bg-[#141a27] border-b border-[#1e2638]">
+    <div class="pt-3 px-4.5 bg-slate-900 border-b border-slate-800">
       <div class="flex items-center justify-between mb-2.5">
         <span class="font-bold text-sm text-slate-100">🛡️ Architect Command Center</span>
         <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-2 py-0.5 rounded-full border border-emerald-500/20">Production Target: VBC 2.0</span>
@@ -27,7 +27,7 @@
       <div v-if="currentTab === 'telemetry'" class="flex flex-col gap-4">
         <!-- Live Enterprise KPI Counters -->
         <div class="grid grid-cols-4 gap-2.5">
-          <div class="bg-[#141b2b] border border-slate-800 rounded-xl p-2.5 px-3 flex flex-col gap-0.5">
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 px-3 flex flex-col gap-0.5">
             <span class="text-xs text-slate-500 font-medium uppercase tracking-wider">External API Calls</span>
             <div class="flex items-baseline gap-1.5">
               <span class="text-xl font-bold font-mono text-emerald-400">0</span>
@@ -36,7 +36,7 @@
             <span class="text-xs text-slate-500 mt-0.5">100% First-Party CDN / No GIPHY</span>
           </div>
 
-          <div class="bg-[#141b2b] border border-slate-800 rounded-xl p-2.5 px-3 flex flex-col gap-0.5">
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 px-3 flex flex-col gap-0.5">
             <span class="text-xs text-slate-500 font-medium uppercase tracking-wider">Search Query Leakage</span>
             <div class="flex items-baseline gap-1.5">
               <span class="text-xl font-bold font-mono text-emerald-400">0 B</span>
@@ -45,7 +45,7 @@
             <span class="text-xs text-slate-500 mt-0.5">Queries never touch a server</span>
           </div>
 
-          <div class="bg-[#141b2b] border border-slate-800 rounded-xl p-2.5 px-3 flex flex-col gap-0.5">
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 px-3 flex flex-col gap-0.5">
             <span class="text-xs text-slate-500 font-medium uppercase tracking-wider">Last Search Latency</span>
             <div class="flex items-baseline gap-1.5">
               <span class="text-xl font-bold font-mono text-sky-400">{{ currentTelemetry.latencyMs }} ms</span>
@@ -54,7 +54,7 @@
             <span class="text-xs text-slate-500 mt-0.5">In-memory index in RAM</span>
           </div>
 
-          <div class="bg-[#141b2b] border border-slate-800 rounded-xl p-2.5 px-3 flex flex-col gap-0.5">
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-2.5 px-3 flex flex-col gap-0.5">
             <span class="text-xs text-slate-500 font-medium uppercase tracking-wider">MMS 450KB Compliance</span>
             <div class="flex items-baseline gap-1.5">
               <span class="text-xl font-bold font-mono text-emerald-400">100%</span>
@@ -65,7 +65,7 @@
         </div>
 
         <!-- Selected Asset Deep Dive -->
-        <div class="bg-[#141b2b] border border-slate-800 rounded-xl p-3.5 px-4 flex flex-col gap-3.5">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 px-4 flex flex-col gap-3.5">
           <div class="flex items-center justify-between">
             <h4 class="m-0 text-sm font-semibold text-slate-100">Selected Asset Audit & Compliance Proof</h4>
             <span v-if="inspectedAsset" class="bg-sky-500/15 text-sky-400 font-mono text-xs px-2 py-0.5 rounded font-semibold">{{ inspectedAsset.id }}</span>
@@ -73,7 +73,7 @@
 
           <div v-if="inspectedAsset" class="flex flex-col gap-3">
             <!-- Visual MMS Gauge Bar -->
-            <div class="bg-[#0d121c] border border-slate-800 rounded-lg p-3 px-3.5">
+            <div class="bg-slate-950 border border-slate-800 rounded-lg p-3 px-3.5">
               <div class="flex justify-between text-xs text-slate-400 mb-2 font-medium">
                 <span>Carrier MMS Byte Ceiling Utilization</span>
                 <span class="text-emerald-400 font-semibold font-mono">
@@ -95,31 +95,31 @@
 
             <!-- Cryptographic Provenance Row -->
             <div class="grid grid-cols-2 gap-2">
-              <div class="bg-[#0d121c] border border-slate-800 p-2 px-2.5 rounded-md flex flex-col gap-0.5">
+              <div class="bg-slate-950 border border-slate-800 p-2 px-2.5 rounded-md flex flex-col gap-0.5">
                 <span class="text-xs text-slate-500 uppercase tracking-wide">Title</span>
                 <span class="text-xs text-slate-100 font-medium">{{ inspectedAsset.title }}</span>
               </div>
-              <div class="bg-[#0d121c] border border-slate-800 p-2 px-2.5 rounded-md flex flex-col gap-0.5">
+              <div class="bg-slate-950 border border-slate-800 p-2 px-2.5 rounded-md flex flex-col gap-0.5">
                 <span class="text-xs text-slate-500 uppercase tracking-wide">MIME Type</span>
                 <span class="text-xs font-mono text-slate-100">{{ inspectedAsset.mimeType }}</span>
               </div>
-              <div class="bg-[#0d121c] border border-slate-800 p-2 px-2.5 rounded-md flex flex-col gap-0.5">
+              <div class="bg-slate-950 border border-slate-800 p-2 px-2.5 rounded-md flex flex-col gap-0.5">
                 <span class="text-xs text-slate-500 uppercase tracking-wide">SPDX License</span>
                 <span class="text-xs font-mono text-emerald-400 font-semibold">{{ inspectedAsset.license }}</span>
               </div>
-              <div class="bg-[#0d121c] border border-slate-800 p-2 px-2.5 rounded-md flex flex-col gap-0.5">
+              <div class="bg-slate-950 border border-slate-800 p-2 px-2.5 rounded-md flex flex-col gap-0.5">
                 <span class="text-xs text-slate-500 uppercase tracking-wide">Origin Provider</span>
                 <span class="text-xs text-slate-100 font-medium">Google Noto Open Source</span>
               </div>
-              <div class="col-span-2 bg-[#0d121c] border border-slate-800 p-2 px-2.5 rounded-md flex flex-col gap-0.5">
+              <div class="col-span-2 bg-slate-950 border border-slate-800 p-2 px-2.5 rounded-md flex flex-col gap-0.5">
                 <span class="text-xs text-slate-500 uppercase tracking-wide">SHA-256 Cryptographic Checksum</span>
                 <span class="text-xs font-mono text-slate-300 break-all">{{ inspectedAsset.sha256 }}</span>
               </div>
             </div>
 
             <!-- JSON Payload View -->
-            <div class="bg-[#0a0d14] border border-slate-800 rounded-lg overflow-hidden">
-              <div class="bg-[#141a27] px-3 py-1.5 flex justify-between items-center text-xs text-slate-400 border-b border-slate-800">
+            <div class="bg-slate-950 border border-slate-800 rounded-lg overflow-hidden">
+              <div class="bg-slate-900 px-3 py-1.5 flex justify-between items-center text-xs text-slate-400 border-b border-slate-800">
                 <span>Normalized Media Contract JSON</span>
                 <button
                   class="bg-white/10 hover:bg-white/20 text-slate-200 border-0 px-2.5 py-0.5 rounded text-xs cursor-pointer transition-colors"
@@ -144,21 +144,21 @@
           <div class="flex gap-1.5">
             <button
               class="border px-3 py-1.5 rounded-md text-xs cursor-pointer transition-all duration-150"
-              :class="currentSdkTab === 'vue' ? 'bg-sky-600 text-white border-sky-400 font-medium' : 'bg-[#141b2b] border-slate-800 text-slate-400 hover:text-white'"
+              :class="currentSdkTab === 'vue' ? 'bg-sky-600 text-white border-sky-400 font-medium' : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'"
               @click="currentSdkTab = 'vue'"
             >
               Vue 2.7 / Vue 3 (Web)
             </button>
             <button
               class="border px-3 py-1.5 rounded-md text-xs cursor-pointer transition-all duration-150"
-              :class="currentSdkTab === 'android' ? 'bg-sky-600 text-white border-sky-400 font-medium' : 'bg-[#141b2b] border-slate-800 text-slate-400 hover:text-white'"
+              :class="currentSdkTab === 'android' ? 'bg-sky-600 text-white border-sky-400 font-medium' : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'"
               @click="currentSdkTab = 'android'"
             >
               Android (Kotlin / Coil 3)
             </button>
             <button
               class="border px-3 py-1.5 rounded-md text-xs cursor-pointer transition-all duration-150"
-              :class="currentSdkTab === 'ios' ? 'bg-sky-600 text-white border-sky-400 font-medium' : 'bg-[#141b2b] border-slate-800 text-slate-400 hover:text-white'"
+              :class="currentSdkTab === 'ios' ? 'bg-sky-600 text-white border-sky-400 font-medium' : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'"
               @click="currentSdkTab = 'ios'"
             >
               iOS (Swift SPM / SDWebImage)
@@ -172,7 +172,7 @@
           </button>
         </div>
 
-        <div class="bg-[#0a0d14] border border-slate-800 rounded-lg overflow-hidden">
+        <div class="bg-slate-950 border border-slate-800 rounded-lg overflow-hidden">
           <pre class="p-3.5 m-0 max-h-96 overflow-y-auto font-mono text-xs text-slate-100 leading-relaxed"><code>{{ activeSdkCode }}</code></pre>
         </div>
 
@@ -187,14 +187,14 @@
           <div class="flex gap-1.5">
             <button
               class="border px-3 py-1.5 rounded-md text-xs cursor-pointer transition-all duration-150"
-              :class="adrSubTab === 'doc' ? 'bg-sky-600 text-white border-sky-400 font-medium' : 'bg-[#141b2b] border-slate-800 text-slate-400 hover:text-white'"
+              :class="adrSubTab === 'doc' ? 'bg-sky-600 text-white border-sky-400 font-medium' : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'"
               @click="adrSubTab = 'doc'"
             >
               ADR-001 Document
             </button>
             <button
               class="border px-3 py-1.5 rounded-md text-xs cursor-pointer transition-all duration-150"
-              :class="adrSubTab === 'sbom' ? 'bg-sky-600 text-white border-sky-400 font-medium' : 'bg-[#141b2b] border-slate-800 text-slate-400 hover:text-white'"
+              :class="adrSubTab === 'sbom' ? 'bg-sky-600 text-white border-sky-400 font-medium' : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'"
               @click="adrSubTab = 'sbom'"
             >
               Audit SBOM (licenses-sbom.json)
@@ -212,18 +212,18 @@
         </div>
 
         <!-- Render ADR Text -->
-        <div v-if="adrSubTab === 'doc'" class="bg-[#0a0d14] border border-slate-800 rounded-lg p-4 max-h-110 overflow-y-auto">
+        <div v-if="adrSubTab === 'doc'" class="bg-slate-950 border border-slate-800 rounded-lg p-4 max-h-110 overflow-y-auto">
           <pre class="m-0 font-mono text-xs text-slate-200 whitespace-pre-wrap leading-relaxed">{{ ADR_TEXT }}</pre>
         </div>
 
         <!-- Render Live SBOM Table -->
-        <div v-else class="bg-[#0a0d14] border border-slate-800 rounded-lg overflow-hidden flex flex-col">
-          <div class="p-2.5 px-3 bg-[#141a27] border-b border-slate-800 flex justify-between items-center gap-3">
+        <div v-else class="bg-slate-950 border border-slate-800 rounded-lg overflow-hidden flex flex-col">
+          <div class="p-2.5 px-3 bg-slate-900 border-b border-slate-800 flex justify-between items-center gap-3">
             <input
               v-model="sbomSearchQuery"
               type="text"
               placeholder="Search SBOM by asset ID, license, or hash..."
-              class="bg-[#0d121c] border border-slate-800 rounded-md px-2.5 py-1 text-xs text-slate-100 placeholder-slate-500 w-72 focus:outline-none focus:border-sky-400"
+              class="bg-slate-950 border border-slate-800 rounded-md px-2.5 py-1 text-xs text-slate-100 placeholder-slate-500 w-72 focus:outline-none focus:border-sky-400"
             />
             <span class="text-xs text-slate-400 font-mono">Showing {{ filteredSbomAssets.length }} verified assets</span>
           </div>
@@ -231,7 +231,7 @@
           <div class="overflow-x-auto">
             <table class="w-full border-collapse text-xs">
               <thead>
-                <tr class="bg-[#141a27] text-slate-400 text-xs text-left border-b border-slate-800">
+                <tr class="bg-slate-900 text-slate-400 text-xs text-left border-b border-slate-800">
                   <th class="py-2.5 px-3 font-semibold">Asset ID</th>
                   <th class="py-2.5 px-3 font-semibold">SPDX License</th>
                   <th class="py-2.5 px-3 font-semibold">File Size</th>
