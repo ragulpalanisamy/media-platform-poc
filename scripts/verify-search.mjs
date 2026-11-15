@@ -1,6 +1,7 @@
 // scripts/verify-search.mjs
 import fs from 'node:fs';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 console.log('🧪 Starting VBC Media Platform Search & Telemetry Verification Suite...');
 
@@ -50,7 +51,7 @@ fs.writeFileSync(tempMjsPath, transpiled.outputText, 'utf8');
 
 let VbcMediaCore;
 try {
-  const fileUrl = new URL(`file://${path.resolve(tempMjsPath)}`).href;
+  const fileUrl = pathToFileURL(tempMjsPath).href;
   const importedModule = await import(fileUrl);
   VbcMediaCore = importedModule.VbcMediaCore;
 } finally {
